@@ -7,6 +7,9 @@ data/SoundDat.o(COMMON);
 asm/m4a_mixer.o(COMMON);
 . = ALIGN(4);
 
+asm/m4a_1.o(COMMON);
+. = ALIGN(4);
+
 ExtMPlyJmpTbl = .; . += 0x90;
 m4a_cgbchn = .; . += 0x100;
 /* M4A stuff end */

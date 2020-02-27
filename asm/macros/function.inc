@@ -25,5 +25,5 @@
 	.endm
 
 	.macro thumb_func_end name
-	.size \name, .-\name
+/*	.size \name, .-\name*/
 	.endm

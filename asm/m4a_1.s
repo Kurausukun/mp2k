@@ -2,6 +2,11 @@
 
 .syntax unified
 
+	.global	PCM_DMA_BUF_SIZE
+	.equ	PCM_DMA_BUF_SIZE, 0x1340
+
+	.comm m4a_sound, 0x350 + PCM_DMA_BUF_SIZE * 2
+
 	THUMB_FUNC_START sub_80001D0
 sub_80001D0: @ sub_80001D0
 	add r2, pc, #0x0
@@ -77,7 +82,7 @@ _08000250: .4byte 0x68736D53
 _08000254: .4byte SoundMainBuf+1
 _08000258: .4byte 0x04000006
 _0800025C: .4byte 0x00000350
-_08000260: .4byte PCM_DMA_BUF
+_08000260: .4byte PCM_DMA_BUF_SIZE
 
 	non_word_aligned_thumb_func_start .call_r3
 .call_r3: @ 0x08000602

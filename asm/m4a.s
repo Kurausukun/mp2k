@@ -138,10 +138,10 @@ _08000EDE:
 	.align 2, 0
 _08000EE4: .4byte SoundMainRAM+1
 _08000EE8: .4byte SoundMainBuf
-_08000EEC: .4byte 0x04000300
+_08000EEC: .4byte 0x04000230
 _08000EF0: .4byte m4a_sound
 _08000EF4: .4byte m4a_cgbchn
-_08000EF8: .4byte 0x009CD800
+_08000EF8: .4byte 0x009CCC00
 _08000EFC: .4byte 0x00000004
 _08000F00: .4byte mplay_table
 _08000F04: .4byte m4a_memacc_area
@@ -671,7 +671,9 @@ _080012BA:
 	ldr r0, _08001368
 	str r0, [r1]
 	adds r1, #8
-	ldr r2, =PCM_DMA_BUF+0x350
+	movs r2, #0xB4
+	lsls r2, r2, #5
+	adds r2, r2, #0x10
 	adds r0, r5, r2
 	str r0, [r1]
 	adds r1, #4
@@ -709,7 +711,6 @@ _080012BA:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	.pool
 _08001348: .4byte 0x040000C4
 _0800134C: .4byte 0x84400004
 _08001350: .4byte 0x040000D0
@@ -745,7 +746,8 @@ SampFreqSet_rev01: @ 0x08001388
 	adds r0, r0, r1
 	ldrh r5, [r0]
 	str r5, [r4, #0x10]
-	ldr r0, =PCM_DMA_BUF
+	movs r0, #0x4D
+	lsls r0, r0, #6
 	adds r1, r5, #0
 	bl __divsi3
 	strb r0, [r4, #0xb]
@@ -789,7 +791,6 @@ _080013F4:
 	pop {r0}
 	bx r0
 	.align 2, 0
-	.pool
 _08001408: .4byte 0x03007FF0
 _0800140C: .4byte pcmVBtbl_rev
 _08001410: .4byte 0x00091D1B

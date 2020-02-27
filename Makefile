@@ -39,6 +39,9 @@ OBJS_REL := $(patsubst $(OBJ_DIR)/%,%,$(OBJS))
 NAME := SoundMon
 ROM := $(NAME).gba
 ELF := $(NAME).elf
+MAP := $(NAME).map
+
+LDFLAGS = -Map ./$(MAP)
 
 # Clear the default suffixes
 .SUFFIXES:
@@ -57,7 +60,10 @@ compare: $(ROM)
 	$(SHA1SUM) rom.sha1
 
 clean:
-	rm -f $(ROM) $(ELF) $(OBJS)
+	rm -f sound/direct_sound_samples/*.bin
+	rm -f $(MID_SUBDIR)/*.s
+	rm -f $(ROM) $(ELF) $(OBJS) $(MAP)
+
 include songs.mk
 
 sound/%.bin: sound/%.aif ; $(AIF) $< $@
@@ -66,16 +72,10 @@ GCC_VER := $(shell $(GCC) -dumpversion)
 
 $(ROM): $(ELF)
 	$(OBJCOPY) -O binary $< $@
+	$(GBAFIX) $@ -p --silent
 
-ld_script.ld: ld_script.txt sym_iwram.ld sym_ewram.ld
-	cp $< $@ 
-sym_iwram.ld: sym_iwram.txt
-	cp $< $@ 
-sym_ewram.ld: sym_ewram.txt
-	cp $< $@ 
-
-$(ELF): %.elf: $(OBJS) ld_script.ld
-	$(LD) -T ld_script.ld -Map $*.map -o $@ $(OBJS) -L /usr/lib/gcc/arm-none-eabi/$(GCC_VER)/thumb -L /usr/lib/arm-none-eabi/lib/thumb -lgcc -lc
+$(ELF): %.elf: $(OBJS)
+	$(LD) $(LDFLAGS) -T ld_script.txt -o $@ $(OBJS) -L /opt/devkitpro/devkitARM/arm-none-eabi/lib/thumb/ -L /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/$(GCC_VER)/thumb -lgcc -lc
 	$(GBAFIX) -m01 --silent $@
 
 $(ASM_BUILDDIR)/%.o: $(ASM_SUBDIR)/%.s $$(asm_dep)
