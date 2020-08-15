@@ -621,3 +621,19 @@ DirectSoundWaveData_sd90_classical_whistle::
 	.align 2
 DirectSoundWaveData_sd90_enhanced_delay_shaku::
 	.incbin "sound/direct_sound_samples/sd90_enhanced_delay_shaku.bin"
+
+	.align 2
+DirectSoundWaveData_orchhit::
+	.incbin "sound/direct_sound_samples/orchhit.bin"
+
+	.align 2
+DirectSoundWaveData_organchord::
+	.incbin "sound/direct_sound_samples/organchord.bin"
+
+	.align 2
+DirectSoundWaveData_octavestrings::
+	.incbin "sound/direct_sound_samples/octavestrings.bin"
+
+	.align 2
+DirectSoundWaveData_octavestrings2::
+	.incbin "sound/direct_sound_samples/octavestrings2.bin"
