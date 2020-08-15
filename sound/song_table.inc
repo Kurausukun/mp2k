@@ -1,617 +1,1976 @@
 	.align 2
 
-	.global	gSongTable
-gSongTable:
-	song mus_dummy, 0, 0
-	song se_kaifuku, 1, 1           @ Healing Item
-	song se_pc_login, 1, 1          @ PC Login
-	song se_pc_off, 1, 1            @ PC Shutdown
-	song se_pc_on, 1, 1             @ PC Startup
-	song se_select, 2, 2            @ Cursor Selection
-	song se_win_open, 1, 1          @ Start Menu
-	song se_wall_hit, 2, 2          @ Wall Bump
-	song se_door, 1, 1              @ Opening Door
-	song se_kaidan, 1, 1            @ Stairs
-	song se_dansa, 1, 1             @ Ledge
-	song se_jitensya, 1, 1          @ Bicycle Bell
-	song se_kouka_l, 1, 1           @ Not Very Effective
-	song se_kouka_m, 1, 1           @ Normal Effectiveness
-	song se_kouka_h, 1, 1           @ Super Effective
-	song se_bowa2, 1, 1             @ Pokémon Withdrawal
-	song se_poke_dead, 1, 1         @ Pokémon Fainted
-	song se_nigeru, 1, 1            @ Flee from Wild Battle
-	song se_jido_doa, 1, 1          @ Pokémon Center Door
-	song se_naminori, 1, 1          @ Briney's Ship
-	song se_ban, 1, 1               @ Bang
-	song se_pin, 1, 1               @ Exclamation Bubble
-	song se_boo, 1, 1               @ Contest Jam
-	song se_bowa, 1, 1              @ Giving Poké Ball to Nurse, Poké Ball Wiggle
-	song se_jyuni, 2, 2             @ Contest - Rankings Revealed
-	song se_a, 1, 1                 @ Bard A
-	song se_i, 1, 1                 @ Bard I
-	song se_u, 1, 1                 @ Bard U
-	song se_e, 1, 1                 @ Bard E
-	song se_o, 1, 1                 @ Bard O
-	song se_n, 1, 1                 @ Bard N
-	song se_seikai, 1, 1            @ Success
-	song se_hazure, 1, 1            @ Failure
-	song se_exp, 1, 1               @ Exp. Bar
-	song se_jite_pyoko, 1, 1        @ Bunny Hop
-	song se_mu_pachi, 1, 1          @ Toggle Switch
-	song se_tk_kasya, 1, 1          @ Mossdeep Gym/Trick House Switch
-	song se_fu_zaku, 1, 1
-	song se_fu_zaku2, 1, 1
-	song se_fu_zuzuzu, 1, 1         @ Lavaridge Gym - Warp
-	song se_ru_gashin, 1, 1         @ Sootopolis Gym - Stairs Appear
-	song se_ru_gasyan, 1, 1         @ Sootopolis Gym - Ice Breaking
-	song se_ru_bari, 1, 1           @ Sootopolis Gym - Walking on Ice
-	song se_ru_hyuu, 1, 1           @ Falling Down a Hole
-	song se_ki_gasyan, 2, 2
-	song se_tk_warpin, 1, 1         @ Warp In
-	song se_tk_warpout, 1, 1        @ Warp Out
-	song se_tu_saa, 1, 1            @ Repel
-	song se_hi_turun, 1, 1          @ Fortree Gym - Obstacle
-	song se_track_move, 1, 1        @ Moving Truck
-	song se_track_stop, 1, 1        @ Moving Truck Stop
-	song se_track_haiki, 2, 2       @ Moving Truck Unload
-	song se_track_door, 1, 1        @ Moving Truck Door
-	song se_moter, 2, 2
-	song se_card, 1, 1
-	song se_save, 1, 1              @ Save
-	song se_kon, 1, 1               @ Poké Ball Bounce 1
-	song se_kon2, 1, 1              @ Poké Ball Bounce 2
-	song se_kon3, 1, 1              @ Poké Ball Bounce 3
-	song se_kon4, 1, 1              @ Poké Ball Bounce 4
-	song se_suikomu, 2, 2           @ Poké Ball Trade
-	song se_nageru, 1, 1            @ Poké Ball Throw
-	song se_toy_c, 2, 2             @ Note C
-	song se_toy_d, 2, 2             @ Note D
-	song se_toy_e, 2, 2             @ Note E
-	song se_toy_f, 2, 2             @ Note F
-	song se_toy_g, 2, 2             @ Note G
-	song se_toy_a, 2, 2             @ Note A
-	song se_toy_b, 2, 2             @ Note B
-	song se_toy_c1, 2, 2            @ Note High C
-	song se_mizu, 2, 2              @ Puddle
-	song se_hashi, 2, 2             @ Fortree Walkways
-	song se_daugi, 1, 1             @ Slots - Credits
-	song se_pinpon, 1, 1            @ Elevator - Reached Destination
-	song se_fuusen1, 2, 2           @ Red Balloon
-	song se_fuusen2, 2, 2           @ Blue Balloon
-	song se_fuusen3, 2, 2           @ Yellow Balloon
-	song se_toy_kabe, 2, 2          @ Breakable Door
-	song se_toy_dango, 2, 2         @ Mud Ball
-	song se_doku, 1, 1              @ Overworld - Poison Damage
-	song se_esuka, 1, 1             @ Escalator
-	song se_t_ame, 3, 3             @ Rain
-	song se_t_ame_e, 3, 3           @ Rain Stop
-	song se_t_ooame, 3, 3           @ Heavy Rain
-	song se_t_ooame_e, 3, 3         @ Heavy Rain Stop
-	song se_t_koame, 3, 3           @ Light Rain
-	song se_t_koame_e, 3, 3         @ Light Rain Stop
-	song se_t_kami, 1, 1            @ Thunder
-	song se_t_kami2, 1, 1           @ Thunder 2
-	song se_elebeta, 1, 1           @ Elevator
-	song se_hinsi, 3, 3             @ Low Health
-	song se_expmax, 1, 1            @ Exp. Max
-	song se_tamakoro, 2, 2          @ Roulette Ball
-	song se_tamakoro_e, 2, 2        @ Roulette Ball 2
-	song se_basabasa, 1, 1          @ Wing Attack
-	song se_regi, 1, 1              @ Cash Register
-	song se_c_gaji, 1, 1            @ Contest - Hearts
-	song se_c_maku_u, 1, 1          @ Contest - Curtain Rises
-	song se_c_maku_d, 1, 1          @ Contest - Curtain Falls
-	song se_c_pasi, 1, 1            @ Contest - Inflict Status
-	song se_c_syu, 1, 1             @ Contest - Pokémon Switches Out
-	song se_c_pikon, 1, 1           @ Contest - Pokémon Switches In
-	song se_reapoke, 1, 1           @ Shiny Pokémon
-	song se_op_basyu, 1, 1          @ Opening Movie -> Title Screen Transition
-	song se_bt_start, 1, 1          @ Battle Mugshot whoosh
-	song se_dendou, 1, 1            @ Audience Cheering
-	song se_jihanki, 1, 1           @ Vending Machine
-	song se_tama, 1, 1              @ Orb Used
-	song se_z_scroll, 1, 1          @ Pokédex Scrolling
-	song se_z_page, 1, 1            @ Pokédex Page
-	song se_pn_on, 1, 1             @ PokéNav On
-	song se_pn_off, 1, 1            @ PokéNav Off
-	song se_z_search, 1, 1          @ Pokédex Search
-	song se_tamago, 1, 1            @ Egg hatch
-	song se_tb_start, 1, 1          @ Battle - Poké Ball Tray slide in
-	song se_tb_kon, 1, 1            @ Battle - Poké Ball Tray ball sound
-	song se_tb_kara, 2, 2           @ Battle - Poké Ball Tray slide out
-	song se_bidoro, 1, 1
-	song se_w085, 2, 2              @ Thunderbolt
-	song se_w085b, 1, 1             @ Thunderbolt 2
-	song se_w231, 1, 1              @ Harden
-	song se_w171, 1, 1              @ Nightmare
-	song se_w233, 1, 1              @ Vital Throw
-	song se_w233b, 1, 1             @ Vital Throw 2
-	song se_w145, 1, 1              @ Bubble
-	song se_w145b, 1, 1             @ Bubble 2
-	song se_w145c, 1, 1             @ Bubble 3
-	song se_w240, 1, 1              @ Rain Dance
-	song se_w015, 1, 1              @ Cut
-	song se_w081, 1, 1              @ String Shot
-	song se_w081b, 1, 1             @ String Shot 2
-	song se_w088, 1, 1              @ Rock Throw
-	song se_w016, 2, 2              @ Gust
-	song se_w016b, 2, 2             @ Gust 2
-	song se_w003, 1, 1              @ DoubleSlap
-	song se_w104, 1, 1              @ Double Team
-	song se_w013, 1, 1              @ Razor Wind
-	song se_w196, 1, 1              @ Icy Wind
-	song se_w086, 1, 1              @ Thunder Wave
-	song se_w004, 1, 1              @ Comet Punch
-	song se_w025, 1, 1              @ Mega Kick
-	song se_w025b, 1, 1             @ Mega Kick 2
-	song se_w152, 1, 1              @ Crabhammer
-	song se_w026, 1, 1              @ Jump Kick
-	song se_w172, 1, 1              @ Flame Wheel
-	song se_w172b, 1, 1             @ Flame Wheel 2
-	song se_w053, 1, 1              @ Flamethrower
-	song se_w007, 1, 1              @ Fire Punch
-	song se_w092, 1, 1              @ Toxic
-	song se_w221, 1, 1              @ Sacred Fire
-	song se_w221b, 2, 2             @ Sacred Fire 2
-	song se_w052, 1, 1              @ Ember
-	song se_w036, 2, 2              @ Take Down
-	song se_w059, 1, 1              @ Blizzard
-	song se_w059b, 1, 1             @ Blizzard 2
-	song se_w010, 1, 1              @ Scratch
-	song se_w011, 1, 1              @ Vicegrip
-	song se_w017, 1, 1              @ Wing Attack
-	song se_w019, 1, 1              @ Fly
-	song se_w028, 1, 1              @ Sand-Attack
-	song se_w013b, 1, 1             @ Razor Wind 2
-	song se_w044, 1, 1              @ Bite
-	song se_w029, 1, 1              @ Headbutt
-	song se_w057, 1, 1              @ Surf
-	song se_w056, 1, 1              @ Hydro Pump
-	song se_w250, 1, 1              @ Whirlpool
-	song se_w030, 1, 1              @ Horn Attack
-	song se_w039, 2, 2              @ Tail Whip
-	song se_w054, 1, 1              @ Mist
-	song se_w077, 1, 1              @ PoisonPowder
-	song se_w020, 2, 2              @ Bind
-	song se_w082, 1, 1              @ Dragon Rage
-	song se_w047, 1, 1              @ Sing
-	song se_w195, 1, 1              @ Perish Song
-	song se_w006, 1, 1              @ Pay Day
-	song se_w091, 1, 1              @ Dig
-	song se_w146, 1, 1              @ Dizzy Punch
-	song se_w120, 1, 1              @ Self-Destruct
-	song se_w153, 1, 1              @ Explosion
-	song se_w071b, 1, 1             @ Absorb 2
-	song se_w071, 1, 1              @ Absorb
-	song se_w103, 1, 1              @ Screech
-	song se_w062, 1, 1              @ BubbleBeam
-	song se_w062b, 1, 1             @ BubbleBeam 2
-	song se_w048, 1, 1              @ Supersonic
-	song se_w187, 1, 1              @ Belly Drum
-	song se_w118, 1, 1              @ Metronome
-	song se_w155, 1, 1              @ Bonemerang
-	song se_w122, 1, 1              @ Lick
-	song se_w060, 1, 1              @ Psybeam
-	song se_w185, 1, 1              @ Faint Attack
-	song se_w014, 1, 1              @ Swords Dance
-	song se_w043, 1, 1              @ Leer
-	song se_w207, 1, 1              @ Swagger
-	song se_w207b, 1, 1             @ Swagger 2
-	song se_w215, 1, 1              @ Heal Bell
-	song se_w109, 1, 1              @ Confuse Ray
-	song se_w173, 1, 1              @ Snore
-	song se_w280, 1, 1              @ Brick Break
-	song se_w202, 1, 1              @ Giga Drain
-	song se_w060b, 1, 1             @ Psybeam 2
-	song se_w076, 2, 2              @ SolarBeam
-	song se_w080, 1, 1              @ Petal Dance
-	song se_w100, 1, 1              @ Teleport
-	song se_w107, 1, 1              @ Minimize
-	song se_w166, 1, 1              @ Sketch
-	song se_w129, 1, 1              @ Swift
-	song se_w115, 1, 1              @ Reflect
-	song se_w112, 1, 1              @ Barrier
-	song se_w197, 2, 2              @ Detect
-	song se_w199, 1, 1              @ Lock-On
-	song se_w236, 1, 1              @ Moonlight
-	song se_w204, 1, 1              @ Charm
-	song se_w268, 1, 1              @ Charge
-	song se_w070, 1, 1              @ Strength
-	song se_w063, 1, 1              @ Hyper Beam
-	song se_w127, 1, 1              @ Waterfall
-	song se_w179, 1, 1              @ Reversal
-	song se_w151, 1, 1              @ Acid Armor
-	song se_w201, 1, 1              @ Sandstorm
-	song se_w161, 1, 1              @ Tri-Attack
-	song se_w161b, 1, 1             @ Tri-Attack 2
-	song se_w227, 1, 1              @ Encore
-	song se_w227b, 2, 2             @ Encore 2
-	song se_w226, 1, 1              @ Baton Pass
-	song se_w208, 1, 1              @ Milk Drink
-	song se_w213, 1, 1              @ Attract
-	song se_w213b, 1, 1             @ Attract 2
-	song se_w234, 1, 1              @ Morning Sun
-	song se_w260, 1, 1              @ Flatter
-	song se_w328, 1, 1              @ Sand Tomb
-	song se_w320, 1, 1              @ GrassWhistle
-	song se_w255, 1, 1              @ Spit Up
-	song se_w291, 1, 1              @ Dive
-	song se_w089, 2, 2              @ Earthquake
-	song se_w239, 2, 2              @ Twister
-	song se_w230, 1, 1              @ Sweet Scent
-	song se_w281, 1, 1              @ Yawn
-	song se_w327, 2, 2              @ Sky Uppercut
-	song se_w287, 1, 1              @ Stat Increased
-	song se_w257, 1, 1              @ Heat Wave
-	song se_w253, 1, 1              @ Uproar
-	song se_w258, 1, 1              @ Hail
-	song se_w322, 2, 2              @ Cosmic Power
-	song se_w298, 1, 1              @ Teeter Dance
-	song se_w287b, 1, 1             @ Stat Decreased
-	song se_w114, 1, 1              @ Haze
-	song se_w063b, 1, 1             @ Hyper Beam 2
-	song se_rg_w_door, 1, 1         @ Door (FRLG)
-	song se_rg_card1, 1, 1          @ Trainer Card 1 (FRLG)
-	song se_rg_card2, 1, 1          @ Trainer Card 2 (FRLG)
-	song se_rg_card3, 1, 1          @ Trainer Card 3 (FRLG)
-	song se_rg_bag1, 1, 1           @ Bag Scroll (FRLG)
-	song se_rg_bag2, 1, 1           @ Bag Pocket Change (FRLG)
-	song se_rg_getting, 1, 1
-	song se_rg_shop, 1, 1           @ Cash Register (FRLG)
-	song se_rg_kiteki, 1, 1         @ S.S. Anne Horn (FRLG)
-	song se_rg_help_op, 1, 1        @ Help Menu Open (FRLG)
-	song se_rg_help_cl, 1, 1        @ Help Menu Close (FRLG)
-	song se_rg_help_ng, 1, 1        @ Help Menu Error (FRLG)
-	song se_rg_deomov, 1, 1         @ Deoxys Moves
-	song se_rg_excellent, 1, 1      @ HP Restored (FRLG)
-	song se_rg_nawamiss, 1, 1
-	song se_toreeye, 1, 1           @ Trainer's Eye Call
-	song se_toreoff, 1, 1           @ Trainer's Eye Hang Up
-	song se_hantei1, 1, 1           @ Battle Arena - Judgment 1
-	song se_hantei2, 1, 1           @ Battle Arena - Judgment 2
-	song se_curtain, 1, 1           @ Battle Pike - Curtain Opens
-	song se_curtain1, 1, 1          @ Battle Pike - Curtain Closes
-	song se_ussoki, 1, 1            @ Sudowoodo
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
-	song mus_tetsuji, 0, 0          @ Unused - TETSUJI
-	song mus_field13, 0, 0          @ Unused - Route 38
-	song mus_kachi22, 0, 0          @ Victory! (Wild Pokémon) (No Intro)
-	song mus_kachi2, 0, 0           @ Victory! (Wild Pokémon)
-	song mus_kachi3, 0, 0           @ Victory! (Gym Leader)
-	song mus_kachi5, 0, 0           @ Victory! (Wallace)
-	song mus_pcc, 0, 0              @ Unused - Pokémon Center (2)
-	song mus_nibi, 0, 0             @ Unused - Viridian City
-	song mus_suikun, 0, 0           @ Unused - Battle! (Entei/Raikou/Suicune)
-	song mus_dooro1, 0, 0           @ Route 101
-	song mus_dooro_x1, 0, 0         @ Route 110
-	song mus_dooro_x3, 0, 0         @ Route 120
-	song mus_machi_s2, 0, 0         @ Petalburg City
-	song mus_machi_s4, 0, 0         @ Oldale Town
-	song mus_gim, 0, 0              @ Pokémon Gym
-	song mus_naminori, 0, 0         @ Surf
-	song mus_dan01, 0, 0            @ Petalburg Woods
-	song mus_fanfa1, 2, 2           @ Level Up!
-	song mus_me_asa, 2, 2           @ Pokémon Healed
-	song mus_me_bachi, 2, 2         @ Obtained a Badge!
-	song mus_fanfa4, 2, 2           @ Obtained an Item!
-	song mus_fanfa5, 2, 2           @ Congratulations! Your Pokémon Evolved!
-	song mus_me_waza, 2, 2          @ Obtained a TM!
-	song mus_bijyutu, 0, 0          @ Museum
-	song mus_dooro_x4, 0, 0         @ Introductions
-	song mus_fune_kan, 0, 0         @ Oceanic Museum
-	song mus_me_shinka, 2, 2        @ Evolution (Intro)
-	song mus_shinka, 0, 0           @ Evolution
-	song mus_me_wasure, 2, 2        @ Move Deleted
-	song mus_syoujoeye, 0, 0        @ Trainers' Eyes Meet (Tuber♀)
-	song mus_boyeye, 0, 0           @ Trainers' Eyes Meet (Youngster)
-	song mus_dan02, 0, 0            @ Abandoned Ship
-	song mus_machi_s3, 0, 0         @ Fortree City
-	song mus_odamaki, 0, 0          @ Birch Pokémon Lab
-	song mus_b_tower, 0, 0          @ Battle Tower (RS)
-	song mus_swimeye, 0, 0          @ Trainers' Eyes Meet (Swimmer♀)
-	song mus_dan03, 0, 0            @ Cave of Origin
-	song mus_me_kinomi, 2, 2        @ Obtained a Berry!
-	song mus_me_tama, 2, 2          @ The Super-Ancient Pokémon Awaken!
-	song mus_me_b_big, 2, 2         @ Jackpot
-	song mus_me_b_small, 2, 2       @ Win
-	song mus_me_zannen, 2, 2        @ Lose
-	song mus_bd_time, 0, 0          @ Reel Time
-	song mus_test1, 0, 0            @ Pokémon Contest! (Multiplayer - Player 1)
-	song mus_test2, 0, 0            @ Pokémon Contest! (Multiplayer - Player 2)
-	song mus_test3, 0, 0            @ Pokémon Contest! (Multiplayer - Player 3)
-	song mus_test4, 0, 0            @ Pokémon Contest! (Multiplayer - Player 4)
-	song mus_test, 0, 0             @ Trainers' Eyes Meet (Gentleman)
-	song mus_gomachi0, 0, 0         @ Verdanturf Town
-	song mus_gotown, 0, 0           @ Rustboro City
-	song mus_pokecen, 0, 0          @ Pokémon Center
-	song mus_nextroad, 0, 0         @ Route 104
-	song mus_granroad, 0, 0         @ Route 119
-	song mus_cycling, 0, 0          @ Cycling
-	song mus_friendly, 0, 0         @ Poké Mart
-	song mus_mishiro, 0, 0          @ Littleroot Town
-	song mus_tozan, 0, 0            @ Mt. Chimney
-	song mus_girleye, 0, 0          @ Trainers' Eyes Meet (Lass)
-	song mus_minamo, 0, 0           @ Lilycove City
-	song mus_ashroad, 0, 0          @ Route 111
-	song mus_event0, 0, 0           @ H-Help Me!
-	song mus_deepdeep, 0, 0         @ Dive
-	song mus_kachi1, 0, 0           @ Victory! (Trainer Battle)
-	song mus_title3, 0, 0           @ Title Screen
-	song mus_demo1, 0, 0            @ Opening Movie: Setting out on a Journey in the Hoenn Region
-	song mus_girl_sup, 0, 0         @ May
-	song mus_hageshii, 0, 0         @ Trainers' Eyes Meet (Psychic)
-	song mus_kakkoii, 0, 0          @ Trainers' Eyes Meet (Cooltrainer)
-	song mus_kazanbai, 0, 0         @ Route 113
-	song mus_aqa_0, 0, 0            @ Team Aqua Appears!
-	song mus_tsuretek, 0, 0         @ Hurry Along
-	song mus_boy_sup, 0, 0          @ Brendan
-	song mus_rainbow, 0, 0          @ Evergrande City
-	song mus_ayasii, 0, 0           @ Trainers' Eyes Meet (Hex Maniac)
-	song mus_kachi4, 0, 0           @ Victory! (Team Aqua / Team Magma)
-	song mus_ropeway, 0, 0          @ Cable Car
-	song mus_casino, 0, 0           @ Game Corner
-	song mus_hightown, 0, 0         @ Dewford Town
-	song mus_safari, 0, 0           @ Safari Zone
-	song mus_c_road, 0, 0           @ Victory Road
-	song mus_ajito, 0, 0            @ Hideout
-	song mus_m_boat, 0, 0           @ Crossing the Sea
-	song mus_m_dungon, 0, 0         @ Mt. Pyre
-	song mus_finecity, 0, 0         @ Slateport City
-	song mus_machupi, 0, 0          @ Mt. Pyre Exterior
-	song mus_p_school, 0, 0         @ Trainers' School
-	song mus_dendou, 0, 0           @ The Hall of Fame
-	song mus_tonekusa, 0, 0         @ Fallarbor Town
-	song mus_maborosi, 0, 0         @ Sealed Chamber
-	song mus_con_fan, 0, 0          @ Contest Winner
-	song mus_contest0, 0, 0         @ Pokémon Contest!
-	song mus_mgm0, 0, 0             @ Team Magma Appears!
-	song mus_t_battle, 0, 0         @ Opening Movie: Double Battles
-	song mus_ooame, 0, 0            @ Heavy Rain
-	song mus_hideri, 0, 0           @ The Drought
-	song mus_runecity, 0, 0         @ Sootopolis City
-	song mus_con_k, 0, 0            @ Results Announcement
-	song mus_eikou_r, 0, 0          @ Room of Glory
-	song mus_karakuri, 0, 0         @ The Trick House
-	song mus_hutago, 0, 0           @ Twins
-	song mus_sitennou, 0, 0         @ The Elite Four Appear!
-	song mus_yama_eye, 0, 0         @ Trainers' Eyes Meet (Hiker)
-	song mus_conlobby, 0, 0         @ Contest Lobby
-	song mus_inter_v, 0, 0          @ Interviewers
-	song mus_daigo, 0, 0            @ Champion Wallace
-	song mus_thankfor, 0, 0         @ Ending Theme
-	song mus_end, 0, 0              @ The End
-	song mus_b_frontier, 0, 0       @ Battle Frontier
-	song mus_b_arena, 0, 0          @ Battle Arena
-	song mus_me_pointget, 2, 2      @ Obtained a Battle Point!
-	song mus_me_tore_eye, 2, 2      @ Registered Trainer!
-	song mus_pyramid, 0, 0          @ Battle Pyramid
-	song mus_pyramid_top, 0, 0      @ Battle Pyramid Summit
-	song mus_b_palace, 0, 0         @ Battle Palace
-	song mus_rekkuu_kourin, 0, 0    @ Rayquaza Enters!
-	song mus_sattower, 0, 0         @ Battle Tower
-	song mus_me_symbolget, 2, 2     @ Obtained a Frontier Symbol!
-	song mus_b_dome, 0, 0           @ Battle Dome
-	song mus_b_tube, 0, 0           @ Battle Pike
-	song mus_b_factory, 0, 0        @ Battle Factory
-	song mus_vs_rekku, 0, 0         @ Battle! (Rayquaza)
-	song mus_vs_front, 0, 0         @ Battle! (Frontier Brain)
-	song mus_vs_mew, 0, 0           @ Battle! (Mew)
-	song mus_b_dome1, 0, 0          @ Battle Dome Lobby
-	song mus_battle27, 0, 0         @ Battle! (Wild Pokémon)
-	song mus_battle31, 0, 0         @ Battle! (Team Aqua / Team Magma)
-	song mus_battle20, 0, 0         @ Battle! (Trainer Battle)
-	song mus_battle32, 0, 0         @ Battle! (Gym Leader)
-	song mus_battle33, 0, 0         @ Battle! (Champion Wallace)
-	song mus_battle36, 0, 0         @ Battle! (Regirock/Regice/Registeel)
-	song mus_battle34, 0, 0         @ Battle! (Groudon/Kyogre)
-	song mus_battle35, 0, 0         @ Battle! (Brendan/May/Steven)
-	song mus_battle38, 0, 0         @ Battle! (Elite Four)
-	song mus_battle30, 0, 0         @ Battle! (Team Aqua/Team Magma Leaders)
-	song mus_rg_annai, 0, 0         @ Guide (FRLG)
-	song mus_rg_slot, 0, 0          @ Rocket Game Corner (FRLG)
-	song mus_rg_ajito, 0, 0         @ Rocket Hideout (FRLG)
-	song mus_rg_gym, 0, 0           @ Pokémon Gym (FRLG)
-	song mus_rg_purin, 2, 2         @ Jigglypuff's Song (FRLG)
-	song mus_rg_demo, 0, 0          @ Opening Movie (FRLG)
-	song mus_rg_title, 0, 0         @ Title Screen (FRLG)
-	song mus_rg_guren, 0, 0         @ Cinnabar Island Theme (FRLG)
-	song mus_rg_shion, 0, 0         @ Lavender Town Theme (FRLG)
-	song mus_rg_kaihuku, 0, 0       @ Pokémon Healed (FRLG)
-	song mus_rg_cycling, 0, 0       @ Cycling (FRLG)
-	song mus_rg_rocket, 0, 0        @ A Trainer Appears (Bad Guy Version) (FRLG)
-	song mus_rg_shoujo, 0, 0        @ A Trainer Appears (Girl Version) (FRLG)
-	song mus_rg_shounen, 0, 0       @ A Trainer Appears (Boy Version) (FRLG)
-	song mus_rg_dendou, 0, 0        @ Hall of Fame (FRLG)
-	song mus_rg_t_mori, 0, 0        @ Viridian Forest (FRLG)
-	song mus_rg_otsukimi, 0, 0      @ Navel Rock
-	song mus_rg_pokeyashi, 0, 0     @ Pokémon Mansion (FRLG)
-	song mus_rg_ending, 0, 0        @ Ending Theme (FRLG)
-	song mus_rg_load01, 0, 0        @ Road to Viridian City: Leaving Pallet Town (FRLG)
-	song mus_rg_opening, 0, 0       @ Welcome to the World of Pokémon! (FRLG)
-	song mus_rg_load02, 0, 0        @ Road to Cerulean City: Leaving Mt. Moon (FRLG)
-	song mus_rg_load03, 0, 0        @ Road to Fuchsia City: Leaving Lavender Town (FRLG)
-	song mus_rg_champ_r, 0, 0       @ The Final Road (FRLG)
-	song mus_rg_vs_gym, 0, 0        @ Battle! (Gym Leader Battle) (FRLG)
-	song mus_rg_vs_tore, 0, 0       @ Battle! (Trainer Battle) (FRLG)
-	song mus_rg_vs_yasei, 0, 0      @ Battle! (Wild Pokémon) (FRLG)
-	song mus_rg_vs_last, 0, 0       @ Final Battle! (Rival) (FRLG)
-	song mus_rg_masara, 0, 0        @ Pallet Town Theme (FRLG)
-	song mus_rg_kenkyu, 0, 0        @ Professor Oak's Laboratory (FRLG)
-	song mus_rg_ohkido, 0, 0        @ Professor Oak (FRLG)
-	song mus_rg_pokecen, 0, 0       @ Pokémon Center (FRLG)
-	song mus_rg_santoan, 0, 0       @ The S.S. Anne (FRLG)
-	song mus_rg_naminori, 0, 0      @ The Sea (FRLG)
-	song mus_rg_p_tower, 0, 0       @ Pokémon Tower (FRLG)
-	song mus_rg_shiruhu, 0, 0       @ Silph Co. (FRLG)
-	song mus_rg_hanada, 0, 0        @ Fuchsia City Theme (FRLG)
-	song mus_rg_tamamusi, 0, 0      @ Celadon City Theme (FRLG)
-	song mus_rg_win_tre, 0, 0       @ Victory! (Trainer Battle) (FRLG)
-	song mus_rg_win_yasei, 0, 0     @ Victory! (Wild Pokémon) (FRLG)
-	song mus_rg_win_gym, 0, 0       @ Victory! (Gym Leader Battle) (FRLG)
-	song mus_rg_kuchiba, 0, 0       @ Vermillion City Theme (FRLG)
-	song mus_rg_nibi, 0, 0          @ Pewter City Theme (FRLG)
-	song mus_rg_rival1, 0, 0        @ A Rival Appears (FRLG)
-	song mus_rg_rival2, 0, 0        @ A Rival Appears (No Intro) (FRLG)
-	song mus_rg_fan2, 2, 2          @ Fanfare: Professor Oak's Evaluation (FRLG)
-	song mus_rg_fan5, 2, 2          @ Fanfare: Pokémon Obtained (FRLG)
-	song mus_rg_fan6, 2, 2          @ Fanfare: Pokémon Caught
-	song mus_me_rg_photo, 2, 2      @ Pokémon Printer (FRLG)
-	song mus_rg_titlerog, 0, 0      @ Game Freak Logo (FRLG)
-	song mus_rg_get_yasei, 0, 0     @ Fanfare: Pokémon Caught (No Intro) (FRLG)
-	song mus_rg_sousa, 0, 0         @ Game Tutorial (1) (FRLG)
-	song mus_rg_sekaikan, 0, 0      @ Game Tutorial (2) (FRLG)
-	song mus_rg_seibetu, 0, 0       @ Game Tutorial (3) (FRLG)
-	song mus_rg_jump, 0, 0          @ Pokémon Jump (FRLG)
-	song mus_rg_union, 0, 0         @ The Union Room (FRLG)
-	song mus_rg_network, 0, 0       @ Pokémon Net Center (FRLG)
-	song mus_rg_okurimono, 0, 0     @ Mystery Gift (FRLG)
-	song mus_rg_kinomikui, 0, 0     @ Dodrio Berry Picking (FRLG)
-	song mus_rg_nanadungeon, 0, 0   @ Mt. Ember (FRLG)
-	song mus_rg_oshie_tv, 0, 0      @ Teachy TV Lesson (FRLG)
-	song mus_rg_nanashima, 0, 0     @ Sevii Islands (FRLG)
-	song mus_rg_nanaiseki, 0, 0     @ Tanoby Chambers (FRLG)
-	song mus_rg_nana123, 0, 0       @ Sevii Islands: One, Two & Three Islands (FRLG)
-	song mus_rg_nana45, 0, 0        @ Sevii Islands: Four & Five Islands (FRLG)
-	song mus_rg_nana67, 0, 0        @ Sevii Islands: Six & Seven Islands (FRLG)
-	song mus_rg_pokefue, 2, 2       @ The Poké Flute (FRLG)
-	song mus_rg_vs_deo, 0, 0        @ Battle! (Deoxys)
-	song mus_rg_vs_myu2, 0, 0       @ Battle! (Mewtwo) (FRLG)
-	song mus_rg_vs_den, 0, 0        @ Battle! (Ho-Oh/Lugia)
-	song mus_rg_exeye, 0, 0         @ Tense Battle! (FRLG)
-	song mus_rg_deoeye, 0, 0        @ Deoxys Appears
-	song mus_rg_t_tower, 0, 0       @ Trainer Tower (FRLG)
-	song mus_rg_slowmasara, 0, 0    @ Epilogue (FRLG)
-	song mus_rg_tvnoize, 0, 0       @ Teachy TV Menu (FRLG)
-	song ph_trap_blend, 2, 2
-	song ph_trap_held, 2, 2
-	song ph_trap_solo, 2, 2
-	song ph_face_blend, 2, 2
-	song ph_face_held, 2, 2
-	song ph_face_solo, 2, 2
-	song ph_cloth_blend, 2, 2
-	song ph_cloth_held, 2, 2
-	song ph_cloth_solo, 2, 2
-	song ph_dress_blend, 2, 2
-	song ph_dress_held, 2, 2
-	song ph_dress_solo, 2, 2
-	song ph_fleece_blend, 2, 2
-	song ph_fleece_held, 2, 2
-	song ph_fleece_solo, 2, 2
-	song ph_kit_blend, 2, 2
-	song ph_kit_held, 2, 2
-	song ph_kit_solo, 2, 2
-	song ph_price_blend, 2, 2
-	song ph_price_held, 2, 2
-	song ph_price_solo, 2, 2
-	song ph_lot_blend, 2, 2
-	song ph_lot_held, 2, 2
-	song ph_lot_solo, 2, 2
-	song ph_goat_blend, 2, 2
-	song ph_goat_held, 2, 2
-	song ph_goat_solo, 2, 2
-	song ph_thought_blend, 2, 2
-	song ph_thought_held, 2, 2
-	song ph_thought_solo, 2, 2
-	song ph_choice_blend, 2, 2
-	song ph_choice_held, 2, 2
-	song ph_choice_solo, 2, 2
-	song ph_mouth_blend, 2, 2
-	song ph_mouth_held, 2, 2
-	song ph_mouth_solo, 2, 2
-	song ph_foot_blend, 2, 2
-	song ph_foot_held, 2, 2
-	song ph_foot_solo, 2, 2
-	song ph_goose_blend, 2, 2
-	song ph_goose_held, 2, 2
-	song ph_goose_solo, 2, 2
-	song ph_strut_blend, 2, 2
-	song ph_strut_held, 2, 2
-	song ph_strut_solo, 2, 2
-	song ph_cure_blend, 2, 2
-	song ph_cure_held, 2, 2
-	song ph_cure_solo, 2, 2
-	song ph_nurse_blend, 2, 2
-	song ph_nurse_held, 2, 2
-	song ph_nurse_solo, 2, 2
+gSongTable::	@ 0x08120E94
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song0002, 0, 0
+	song mus_song0003, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song0005, 0, 0
+	song mus_song0006, 0, 0
+	song mus_song0007, 0, 0
+	song mus_song0008, 0, 0
+	song mus_song0009, 0, 0
+	song mus_song0010, 0, 0
+	song mus_song0011, 0, 0
+	song mus_song0012, 1, 1
+	song mus_song0013, 0, 0
+	song mus_song0014, 0, 0
+	song mus_song0015, 0, 0
+	song mus_song0016, 0, 0
+	song mus_song0017, 0, 0
+	song mus_song0018, 0, 0
+	song mus_song0019, 0, 0
+	song mus_song0020, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song0024, 0, 0
+	song mus_song0025, 0, 0
+	song mus_song0026, 0, 0
+	song mus_song0027, 0, 0
+	song mus_song0028, 0, 0
+	song mus_song0029, 0, 0
+	song mus_song0030, 1, 1
+	song mus_song0031, 1, 1
+	song mus_song0032, 0, 0
+	song mus_song0033, 0, 0
+	song mus_song0034, 0, 0
+	song mus_song0035, 0, 0
+	song mus_song0036, 0, 0
+	song mus_song0037, 0, 0
+	song mus_song0038, 0, 0
+	song mus_song0039, 0, 0
+	song mus_song0040, 0, 0
+	song mus_song0041, 0, 0
+	song mus_song0042, 0, 0
+	song mus_song0043, 9, 9
+	song mus_song0044, 1, 1
+	song mus_song0045, 0, 0
+	song mus_song0046, 0, 0
+	song mus_song0047, 0, 0
+	song mus_song0048, 0, 0
+	song mus_song0049, 0, 0
+	song mus_song0050, 0, 0
+	song mus_song0051, 0, 0
+	song mus_song0052, 0, 0
+	song mus_song0053, 0, 0
+	song mus_song0054, 0, 0
+	song mus_song0055, 0, 0
+	song mus_song0056, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song0058, 0, 0
+	song mus_song0059, 0, 0
+	song mus_song0060, 0, 0
+	song mus_song0061, 0, 0
+	song mus_song0062, 0, 0
+	song mus_song0063, 0, 0
+	song mus_song0064, 0, 0
+	song mus_song0065, 0, 0
+	song mus_song0066, 0, 0
+	song mus_song0067, 0, 0
+	song mus_song0068, 1, 1
+	song mus_song0069, 0, 0
+	song mus_song0070, 0, 0
+	song mus_song0071, 0, 0
+	song mus_song0072, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song0074, 0, 0
+	song mus_song0075, 0, 0
+	song mus_song0076, 0, 0
+	song mus_song0077, 0, 0
+	song mus_song0078, 0, 0
+	song mus_song0079, 0, 0
+	song mus_song0080, 0, 0
+	song mus_song0081, 0, 0
+	song mus_song0082, 0, 0
+	song mus_song0083, 1, 1
+	song mus_song0084, 1, 1
+	song mus_song0085, 0, 0
+	song mus_song0086, 1, 1
+	song mus_song0087, 0, 0
+	song mus_song0088, 1, 1
+	song mus_song0089, 1, 1
+	song mus_song0090, 1, 1
+	song mus_song0091, 1, 1
+	song mus_song0092, 1, 1
+	song mus_song0093, 1, 1
+	song mus_song0094, 1, 1
+	song mus_song0095, 1, 1
+	song mus_song0096, 1, 1
+	song mus_song0097, 1, 1
+	song mus_song0098, 1, 1
+	song mus_song0099, 1, 1
+	song mus_song0100, 1, 1
+	song mus_song0101, 1, 1
+	song mus_song0102, 1, 1
+	song dummy_song_header, 0, 0
+	song mus_song0104, 9, 9
+	song mus_song0105, 1, 1
+	song mus_song0106, 0, 0
+	song mus_song0107, 9, 9
+	song mus_song0108, 9, 9
+	song mus_song0109, 9, 9
+	song mus_song0110, 9, 9
+	song mus_song0111, 1, 1
+	song mus_song0112, 9, 9
+	song mus_song0113, 9, 9
+	song mus_song0114, 9, 9
+	song mus_song0115, 0, 0
+	song mus_song0116, 0, 0
+	song mus_song0117, 0, 0
+	song mus_song0118, 0, 0
+	song mus_song0119, 9, 9
+	song mus_song0120, 9, 9
+	song mus_song0121, 0, 0
+	song mus_song0122, 0, 0
+	song mus_song0123, 0, 0
+	song mus_song0124, 0, 0
+	song mus_song0125, 0, 0
+	song mus_song0126, 0, 0
+	song mus_song0127, 0, 0
+	song mus_song0128, 0, 0
+	song mus_song0129, 0, 0
+	song mus_song0130, 0, 0
+	song mus_song0131, 1, 1
+	song mus_song0132, 1, 1
+	song mus_song0133, 1, 1
+	song mus_song0134, 1, 1
+	song mus_song0135, 1, 1
+	song mus_song0136, 0, 0
+	song mus_song0137, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 1, 1
+	song mus_song0140, 0, 0
+	song mus_song0141, 0, 0
+	song mus_song0142, 0, 0
+	song mus_song0143, 0, 0
+	song mus_song0144, 0, 0
+	song mus_song0145, 0, 0
+	song mus_song0146, 0, 0
+	song mus_song0147, 0, 0
+	song mus_song0148, 0, 0
+	song mus_song0149, 0, 0
+	song mus_song0150, 0, 0
+	song mus_song0151, 0, 0
+	song mus_song0152, 0, 0
+	song mus_song0153, 0, 0
+	song mus_song0154, 0, 0
+	song mus_song0155, 0, 0
+	song mus_song0156, 0, 0
+	song mus_song0157, 0, 0
+	song mus_song0158, 0, 0
+	song mus_song0159, 0, 0
+	song mus_song0160, 0, 0
+	song mus_song0161, 0, 0
+	song mus_song0162, 0, 0
+	song mus_song0163, 0, 0
+	song mus_song0164, 0, 0
+	song mus_song0165, 0, 0
+	song mus_song0166, 0, 0
+	song mus_song0167, 0, 0
+	song mus_song0168, 0, 0
+	song mus_song0169, 1, 1
+	song mus_song0170, 0, 0
+	song mus_song0171, 9, 9
+	song mus_song0172, 0, 0
+	song mus_song0173, 0, 0
+	song mus_song0174, 0, 0
+	song mus_song0175, 0, 0
+	song mus_song0176, 0, 0
+	song mus_song0177, 0, 0
+	song mus_song0178, 0, 0
+	song mus_song0179, 0, 0
+	song mus_song0180, 0, 0
+	song mus_song0181, 0, 0
+	song mus_song0182, 1, 1
+	song mus_song0183, 1, 1
+	song mus_song0184, 1, 1
+	song mus_song0185, 0, 0
+	song mus_song0186, 9, 9
+	song mus_song0187, 4, 4
+	song mus_song0188, 9, 9
+	song mus_song0189, 3, 3
+	song mus_song0190, 4, 4
+	song mus_song0191, 4, 4
+	song mus_song0192, 4, 4
+	song mus_song0193, 3, 3
+	song mus_song0194, 3, 3
+	song mus_song0195, 3, 3
+	song mus_song0196, 9, 9
+	song mus_song0197, 1, 1
+	song mus_song0198, 3, 3
+	song mus_song0199, 1, 1
+	song mus_song0200, 1, 1
+	song mus_song0201, 9, 9
+	song mus_song0202, 1, 1
+	song mus_song0203, 9, 9
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song0207, 1, 1
+	song mus_song0208, 5, 5
+	song mus_song0209, 5, 5
+	song mus_song0210, 5, 5
+	song mus_song0211, 5, 5
+	song mus_song0212, 5, 5
+	song mus_song0213, 5, 5
+	song mus_song0214, 5, 5
+	song mus_song0215, 5, 5
+	song mus_song0216, 5, 5
+	song mus_song0217, 5, 5
+	song mus_song0218, 5, 5
+	song mus_song0219, 5, 5
+	song mus_song0220, 6, 6
+	song mus_song0221, 6, 6
+	song mus_song0222, 5, 5
+	song mus_song0223, 5, 5
+	song mus_song0224, 5, 5
+	song mus_song0225, 5, 5
+	song mus_song0226, 5, 5
+	song mus_song0227, 5, 5
+	song mus_song0228, 5, 5
+	song mus_song0229, 5, 5
+	song mus_song0230, 5, 5
+	song mus_song0231, 5, 5
+	song mus_song0232, 3, 3
+	song mus_song0233, 0, 0
+	song mus_song0234, 1, 1
+	song mus_song0235, 1, 1
+	song mus_song0236, 3, 3
+	song mus_song0237, 5, 5
+	song mus_song0238, 5, 5
+	song mus_song0239, 1, 1
+	song mus_song0240, 5, 5
+	song mus_song0241, 1, 1
+	song mus_song0242, 5, 5
+	song mus_song0243, 1, 1
+	song mus_song0244, 5, 5
+	song mus_song0245, 9, 9
+	song mus_song0246, 6, 6
+	song mus_song0247, 1, 1
+	song mus_song0248, 1, 1
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song0252, 0, 0
+	song mus_song0253, 0, 0
+	song mus_song0254, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song0259, 2, 2
+	song mus_song0260, 2, 2
+	song mus_song0261, 2, 2
+	song mus_song0262, 2, 2
+	song mus_song0263, 2, 2
+	song mus_song0264, 2, 2
+	song mus_song0265, 2, 2
+	song mus_song0266, 2, 2
+	song mus_song0267, 2, 2
+	song mus_song0268, 2, 2
+	song mus_song0269, 2, 2
+	song mus_song0270, 2, 2
+	song mus_song0271, 2, 2
+	song mus_song0272, 2, 2
+	song mus_song0273, 2, 2
+	song mus_song0274, 2, 2
+	song mus_song0275, 2, 2
+	song mus_song0276, 2, 2
+	song mus_song0277, 2, 2
+	song mus_song0278, 2, 2
+	song mus_song0279, 2, 2
+	song mus_song0280, 2, 2
+	song mus_song0281, 2, 2
+	song mus_song0282, 2, 2
+	song mus_song0283, 2, 2
+	song mus_song0284, 2, 2
+	song mus_song0285, 2, 2
+	song mus_song0286, 2, 2
+	song mus_song0287, 2, 2
+	song mus_song0288, 2, 2
+	song mus_song0289, 2, 2
+	song mus_song0290, 2, 2
+	song mus_song0291, 2, 2
+	song mus_song0292, 2, 2
+	song mus_song0293, 2, 2
+	song mus_song0294, 2, 2
+	song mus_song0295, 2, 2
+	song mus_song0296, 2, 2
+	song mus_song0297, 2, 2
+	song mus_song0298, 2, 2
+	song mus_song0299, 2, 2
+	song mus_song0300, 2, 2
+	song mus_song0301, 2, 2
+	song mus_song0302, 2, 2
+	song mus_song0303, 2, 2
+	song mus_song0304, 2, 2
+	song mus_song0305, 2, 2
+	song mus_song0306, 2, 2
+	song mus_song0307, 2, 2
+	song mus_song0308, 2, 2
+	song mus_song0309, 2, 2
+	song mus_song0310, 2, 2
+	song mus_song0311, 2, 2
+	song mus_song0312, 2, 2
+	song mus_song0313, 2, 2
+	song mus_song0314, 2, 2
+	song mus_song0315, 2, 2
+	song mus_song0316, 2, 2
+	song mus_song0317, 2, 2
+	song mus_song0318, 2, 2
+	song mus_song0319, 2, 2
+	song mus_song0320, 2, 2
+	song mus_song0321, 2, 2
+	song mus_song0322, 2, 2
+	song mus_song0323, 2, 2
+	song mus_song0324, 2, 2
+	song mus_song0325, 2, 2
+	song mus_song0326, 2, 2
+	song mus_song0327, 2, 2
+	song mus_song0328, 2, 2
+	song mus_song0329, 2, 2
+	song mus_song0330, 2, 2
+	song mus_song0331, 2, 2
+	song mus_song0332, 2, 2
+	song mus_song0333, 2, 2
+	song mus_song0334, 2, 2
+	song mus_song0335, 2, 2
+	song mus_song0336, 2, 2
+	song mus_song0337, 2, 2
+	song mus_song0338, 2, 2
+	song mus_song0339, 2, 2
+	song mus_song0340, 2, 2
+	song mus_song0341, 2, 2
+	song mus_song0342, 2, 2
+	song mus_song0343, 2, 2
+	song mus_song0344, 2, 2
+	song mus_song0345, 2, 2
+	song mus_song0346, 2, 2
+	song mus_song0347, 2, 2
+	song mus_song0348, 2, 2
+	song mus_song0349, 2, 2
+	song mus_song0350, 2, 2
+	song mus_song0351, 2, 2
+	song mus_song0352, 2, 2
+	song mus_song0353, 2, 2
+	song mus_song0354, 2, 2
+	song mus_song0355, 2, 2
+	song mus_song0356, 2, 2
+	song mus_song0357, 2, 2
+	song mus_song0358, 2, 2
+	song mus_song0359, 2, 2
+	song mus_song0360, 2, 2
+	song mus_song0361, 2, 2
+	song mus_song0362, 2, 2
+	song mus_song0363, 2, 2
+	song mus_song0364, 2, 2
+	song mus_song0365, 2, 2
+	song mus_song0366, 2, 2
+	song mus_song0367, 2, 2
+	song mus_song0368, 2, 2
+	song mus_song0369, 2, 2
+	song mus_song0370, 2, 2
+	song mus_song0371, 2, 2
+	song mus_song0372, 2, 2
+	song mus_song0373, 2, 2
+	song mus_song0374, 2, 2
+	song mus_song0375, 2, 2
+	song mus_song0376, 2, 2
+	song mus_song0377, 2, 2
+	song mus_song0378, 2, 2
+	song mus_song0379, 2, 2
+	song mus_song0380, 2, 2
+	song mus_song0381, 2, 2
+	song mus_song0382, 2, 2
+	song mus_song0383, 2, 2
+	song mus_song0384, 2, 2
+	song mus_song0385, 2, 2
+	song mus_song0386, 2, 2
+	song mus_song0387, 2, 2
+	song mus_song0388, 2, 2
+	song mus_song0389, 2, 2
+	song mus_song0390, 2, 2
+	song mus_song0391, 2, 2
+	song mus_song0392, 9, 9
+	song dummy_song_header, 0, 0
+	song mus_song0394, 9, 9
+	song mus_song0395, 9, 9
+	song mus_song0396, 0, 0
+	song mus_song0397, 1, 1
+	song mus_song0398, 1, 1
+	song mus_song0399, 1, 1
+	song mus_song0400, 1, 1
+	song mus_song0401, 1, 1
+	song mus_song0402, 1, 1
+	song mus_song0403, 0, 0
+	song mus_song0404, 1, 1
+	song mus_song0405, 1, 1
+	song mus_song0406, 1, 1
+	song mus_song0407, 1, 1
+	song mus_song0408, 1, 1
+	song mus_song0409, 1, 1
+	song mus_song0410, 1, 1
+	song mus_song0411, 9, 9
+	song dummy_song_header, 0, 0
+	song mus_song0413, 0, 0
+	song mus_song0414, 0, 0
+	song mus_song0415, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song0417, 0, 0
+	song mus_song0418, 9, 9
+	song mus_song0419, 9, 9
+	song mus_song0420, 0, 0
+	song mus_song0421, 0, 0
+	song mus_song0422, 0, 0
+	song mus_song0423, 0, 0
+	song mus_song0424, 1, 1
+	song mus_song0425, 1, 1
+	song mus_song0426, 9, 9
+	song mus_song0427, 0, 0
+	song mus_song0428, 0, 0
+	song mus_song0429, 9, 9
+	song mus_song0430, 0, 0
+	song mus_song0431, 9, 9
+	song mus_song0432, 0, 0
+	song mus_song0433, 9, 9
+	song mus_song0434, 0, 0
+	song mus_song0435, 9, 9
+	song mus_song0436, 9, 9
+	song mus_song0437, 9, 9
+	song mus_song0438, 0, 0
+	song mus_song0439, 8, 8
+	song mus_song0440, 8, 8
+	song mus_song0441, 8, 8
+	song mus_song0442, 8, 8
+	song mus_song0443, 8, 8
+	song mus_song0444, 8, 8
+	song mus_song0445, 8, 8
+	song mus_song0446, 8, 8
+	song mus_song0447, 8, 8
+	song mus_song0448, 8, 8
+	song mus_song0449, 8, 8
+	song mus_song0450, 8, 8
+	song mus_song0451, 8, 8
+	song mus_song0452, 8, 8
+	song mus_song0453, 8, 8
+	song mus_song0454, 8, 8
+	song mus_song0455, 8, 8
+	song mus_song0456, 8, 8
+	song mus_song0457, 8, 8
+	song mus_song0458, 8, 8
+	song mus_song0459, 8, 8
+	song mus_song0460, 8, 8
+	song mus_song0461, 8, 8
+	song mus_song0462, 8, 8
+	song mus_song0463, 8, 8
+	song mus_song0464, 8, 8
+	song mus_song0465, 8, 8
+	song mus_song0466, 8, 8
+	song mus_song0467, 8, 8
+	song mus_song0468, 8, 8
+	song mus_song0469, 8, 8
+	song mus_song0470, 8, 8
+	song mus_song0471, 8, 8
+	song mus_song0472, 8, 8
+	song mus_song0473, 8, 8
+	song mus_song0474, 8, 8
+	song mus_song0475, 8, 8
+	song mus_song0476, 8, 8
+	song mus_song0477, 8, 8
+	song mus_song0478, 8, 8
+	song mus_song0479, 8, 8
+	song mus_song0480, 8, 8
+	song mus_song0481, 8, 8
+	song mus_song0482, 8, 8
+	song mus_song0483, 8, 8
+	song mus_song0484, 8, 8
+	song mus_song0485, 8, 8
+	song mus_song0486, 8, 8
+	song mus_song0487, 8, 8
+	song mus_song0488, 8, 8
+	song mus_song0489, 8, 8
+	song mus_song0490, 8, 8
+	song mus_song0491, 8, 8
+	song mus_song0492, 8, 8
+	song mus_song0493, 8, 8
+	song mus_song0494, 8, 8
+	song mus_song0495, 8, 8
+	song mus_song0496, 8, 8
+	song mus_song0497, 8, 8
+	song mus_song0498, 8, 8
+	song mus_song0499, 8, 8
+	song mus_song0500, 8, 8
+	song mus_song0501, 8, 8
+	song mus_song0502, 8, 8
+	song mus_song0503, 8, 8
+	song mus_song0504, 8, 8
+	song mus_song0505, 8, 8
+	song mus_song0506, 8, 8
+	song mus_song0507, 8, 8
+	song mus_song0508, 8, 8
+	song mus_song0509, 8, 8
+	song mus_song0510, 8, 8
+	song mus_song0511, 8, 8
+	song mus_song0512, 8, 8
+	song mus_song0513, 8, 8
+	song mus_song0514, 8, 8
+	song mus_song0515, 8, 8
+	song mus_song0516, 8, 8
+	song mus_song0517, 8, 8
+	song mus_song0518, 8, 8
+	song mus_song0519, 8, 8
+	song mus_song0520, 8, 8
+	song mus_song0521, 8, 8
+	song mus_song0522, 8, 8
+	song mus_song0523, 8, 8
+	song mus_song0524, 8, 8
+	song mus_song0525, 8, 8
+	song mus_song0526, 8, 8
+	song mus_song0527, 8, 8
+	song mus_song0528, 8, 8
+	song mus_song0529, 5, 5
+	song mus_song0530, 5, 5
+	song mus_song0531, 5, 5
+	song mus_song0532, 5, 5
+	song mus_song0533, 5, 5
+	song mus_song0534, 5, 5
+	song mus_song0535, 5, 5
+	song mus_song0536, 5, 5
+	song mus_song0537, 5, 5
+	song mus_song0538, 5, 5
+	song mus_song0539, 5, 5
+	song mus_song0540, 7, 7
+	song mus_song0541, 7, 7
+	song mus_song0542, 7, 7
+	song mus_song0543, 7, 7
+	song mus_song0544, 7, 7
+	song mus_song0545, 7, 7
+	song mus_song0546, 7, 7
+	song mus_song0547, 7, 7
+	song mus_song0548, 7, 7
+	song mus_song0549, 7, 7
+	song mus_song0550, 7, 7
+	song mus_song0551, 7, 7
+	song mus_song0552, 7, 7
+	song mus_song0553, 7, 7
+	song mus_song0554, 7, 7
+	song mus_song0555, 7, 7
+	song mus_song0556, 7, 7
+	song mus_song0557, 7, 7
+	song mus_song0558, 7, 7
+	song mus_song0559, 7, 7
+	song mus_song0560, 7, 7
+	song mus_song0561, 7, 7
+	song mus_song0562, 7, 7
+	song mus_song0563, 7, 7
+	song mus_song0564, 7, 7
+	song mus_song0565, 7, 7
+	song mus_song0566, 7, 7
+	song mus_song0567, 7, 7
+	song mus_song0568, 7, 7
+	song mus_song0569, 7, 7
+	song mus_song0570, 7, 7
+	song mus_song0571, 7, 7
+	song mus_song0572, 7, 7
+	song mus_song0573, 7, 7
+	song mus_song0574, 4, 4
+	song mus_song0575, 7, 7
+	song mus_song0576, 7, 7
+	song mus_song0577, 7, 7
+	song mus_song0578, 4, 4
+	song mus_song0579, 7, 7
+	song mus_song0580, 7, 7
+	song mus_song0581, 7, 7
+	song mus_song0582, 3, 3
+	song mus_song0583, 7, 7
+	song mus_song0584, 7, 7
+	song mus_song0585, 7, 7
+	song mus_song0586, 7, 7
+	song mus_song0587, 7, 7
+	song mus_song0588, 7, 7
+	song mus_song0589, 7, 7
+	song mus_song0590, 7, 7
+	song mus_song0591, 7, 7
+	song mus_song0592, 7, 7
+	song mus_song0593, 7, 7
+	song mus_song0594, 7, 7
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song0597, 7, 7
+	song mus_song0598, 7, 7
+	song mus_song0599, 7, 7
+	song mus_song0600, 7, 7
+	song mus_song0601, 7, 7
+	song mus_song0602, 7, 7
+	song mus_song0603, 7, 7
+	song mus_song0604, 7, 7
+	song mus_song0605, 7, 7
+	song mus_song0606, 7, 7
+	song mus_song0607, 7, 7
+	song mus_song0608, 7, 7
+	song mus_song0609, 7, 7
+	song mus_song0610, 7, 7
+	song mus_song0611, 7, 7
+	song mus_song0612, 7, 7
+	song mus_song0613, 7, 7
+	song mus_song0614, 7, 7
+	song mus_song0615, 7, 7
+	song mus_song0616, 7, 7
+	song mus_song0617, 6, 6
+	song mus_song0618, 6, 6
+	song mus_song0619, 6, 6
+	song mus_song0620, 6, 6
+	song dummy_song_header, 0, 0
+	song mus_song0622, 3, 3
+	song mus_song0623, 4, 4
+	song mus_song0624, 4, 4
+	song mus_song0625, 3, 3
+	song mus_song0626, 4, 4
+	song mus_song0627, 3, 3
+	song mus_song0628, 4, 4
+	song mus_song0629, 3, 3
+	song mus_song0630, 3, 3
+	song mus_song0631, 3, 3
+	song mus_song0632, 3, 3
+	song mus_song0633, 3, 3
+	song mus_song0634, 3, 3
+	song mus_song0635, 3, 3
+	song mus_song0636, 3, 3
+	song dummy_song_header, 0, 0
+	song mus_song0638, 3, 3
+	song mus_song0639, 3, 3
+	song mus_song0640, 4, 4
+	song mus_song0641, 4, 4
+	song mus_song0642, 3, 3
+	song mus_song0643, 4, 4
+	song mus_song0644, 4, 4
+	song mus_song0645, 3, 3
+	song mus_song0646, 4, 4
+	song mus_song0647, 4, 4
+	song mus_song0648, 4, 4
+	song mus_song0649, 4, 4
+	song mus_song0650, 3, 3
+	song mus_song0651, 9, 9
+	song mus_song0652, 4, 4
+	song mus_song0653, 4, 4
+	song mus_song0654, 3, 3
+	song mus_song0655, 4, 4
+	song mus_song0656, 3, 3
+	song mus_song0657, 3, 3
+	song mus_song0658, 4, 4
+	song mus_song0659, 4, 4
+	song mus_song0660, 3, 3
+	song mus_song0661, 3, 3
+	song mus_song0662, 3, 3
+	song mus_song0663, 3, 3
+	song mus_song0664, 3, 3
+	song mus_song0665, 4, 4
+	song mus_song0666, 3, 3
+	song mus_song0667, 3, 3
+	song mus_song0668, 9, 9
+	song mus_song0669, 3, 3
+	song mus_song0670, 3, 3
+	song mus_song0671, 3, 3
+	song mus_song0672, 3, 3
+	song mus_song0673, 3, 3
+	song mus_song0674, 3, 3
+	song mus_song0675, 3, 3
+	song mus_song0676, 3, 3
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song0679, 3, 3
+	song mus_song0680, 4, 4
+	song mus_song0681, 3, 3
+	song dummy_song_header, 0, 0
+	song mus_song0683, 3, 3
+	song mus_song0684, 3, 3
+	song mus_song0685, 3, 3
+	song mus_song0686, 3, 3
+	song mus_song0687, 3, 3
+	song mus_song0688, 3, 3
+	song mus_song0689, 3, 3
+	song mus_song0690, 3, 3
+	song mus_song0691, 3, 3
+	song mus_song0692, 3, 3
+	song mus_song0693, 3, 3
+	song mus_song0694, 3, 3
+	song mus_song0695, 3, 3
+	song mus_song0696, 4, 4
+	song mus_song0697, 3, 3
+	song mus_song0698, 3, 3
+	song mus_song0699, 4, 4
+	song mus_song0700, 3, 3
+	song mus_song0701, 4, 4
+	song mus_song0702, 3, 3
+	song mus_song0703, 3, 3
+	song mus_song0704, 3, 3
+	song mus_song0705, 4, 4
+	song mus_song0706, 3, 3
+	song mus_song0707, 3, 3
+	song mus_song0708, 3, 3
+	song mus_song0709, 3, 3
+	song mus_song0710, 3, 3
+	song mus_song0711, 4, 4
+	song mus_song0712, 4, 4
+	song mus_song0713, 3, 3
+	song mus_song0714, 4, 4
+	song mus_song0715, 4, 4
+	song mus_song0716, 3, 3
+	song mus_song0717, 3, 3
+	song mus_song0718, 3, 3
+	song mus_song0719, 3, 3
+	song mus_song0720, 4, 4
+	song mus_song0721, 3, 3
+	song mus_song0722, 5, 5
+	song mus_song0723, 4, 4
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song0727, 3, 3
+	song mus_song0728, 4, 4
+	song mus_song0729, 1, 1
+	song mus_song0730, 3, 3
+	song mus_song0731, 4, 4
+	song mus_song0732, 4, 4
+	song mus_song0733, 3, 3
+	song mus_song0734, 4, 4
+	song dummy_song_header, 0, 0
+	song mus_song0736, 3, 3
+	song mus_song0737, 3, 3
+	song mus_song0738, 4, 4
+	song dummy_song_header, 0, 0
+	song mus_song0740, 4, 4
+	song mus_song0741, 3, 3
+	song mus_song0742, 4, 4
+	song mus_song0743, 3, 3
+	song dummy_song_header, 0, 0
+	song mus_song0745, 3, 3
+	song mus_song0746, 3, 3
+	song mus_song0747, 3, 3
+	song mus_song0748, 3, 3
+	song mus_song0749, 3, 3
+	song mus_song0750, 3, 3
+	song dummy_song_header, 0, 0
+	song mus_song0752, 3, 3
+	song mus_song0753, 3, 3
+	song mus_song0754, 3, 3
+	song mus_song0755, 3, 3
+	song mus_song0756, 3, 3
+	song mus_song0757, 3, 3
+	song mus_song0758, 4, 4
+	song mus_song0759, 3, 3
+	song mus_song0760, 3, 3
+	song mus_song0761, 3, 3
+	song mus_song0762, 3, 3
+	song mus_song0763, 3, 3
+	song mus_song0764, 3, 3
+	song mus_song0765, 3, 3
+	song mus_song0766, 3, 3
+	song mus_song0767, 3, 3
+	song mus_song0768, 3, 3
+	song mus_song0769, 3, 3
+	song mus_song0770, 6, 6
+	song mus_song0771, 9, 9
+	song mus_song0772, 4, 4
+	song mus_song0773, 3, 3
+	song mus_song0774, 9, 9
+	song mus_song0775, 3, 3
+	song mus_song0776, 3, 3
+	song mus_song0777, 4, 4
+	song mus_song0778, 3, 3
+	song mus_song0779, 3, 3
+	song mus_song0780, 3, 3
+	song mus_song0781, 3, 3
+	song mus_song0782, 3, 3
+	song mus_song0783, 3, 3
+	song mus_song0784, 3, 3
+	song mus_song0785, 3, 3
+	song mus_song0786, 3, 3
+	song mus_song0787, 4, 4
+	song mus_song0788, 9, 9
+	song mus_song0789, 9, 9
+	song mus_song0790, 3, 3
+	song mus_song0791, 3, 3
+	song mus_song0792, 3, 3
+	song mus_song0793, 6, 6
+	song mus_song0794, 3, 3
+	song mus_song0795, 3, 3
+	song mus_song0796, 3, 3
+	song mus_song0797, 3, 3
+	song mus_song0798, 5, 5
+	song mus_song0799, 5, 5
+	song mus_song0800, 3, 3
+	song mus_song0801, 3, 3
+	song mus_song0802, 9, 9
+	song mus_song0803, 4, 4
+	song mus_song0804, 3, 3
+	song mus_song0805, 4, 4
+	song mus_song0806, 4, 4
+	song mus_song0807, 6, 6
+	song mus_song0808, 3, 3
+	song mus_song0809, 3, 3
+	song mus_song0810, 3, 3
+	song mus_song0811, 3, 3
+	song mus_song0812, 4, 4
+	song mus_song0813, 9, 9
+	song mus_song0814, 9, 9
+	song mus_song0815, 3, 3
+	song mus_song0816, 9, 9
+	song mus_song0817, 6, 6
+	song mus_song0818, 5, 5
+	song mus_song0819, 6, 6
+	song mus_song0820, 6, 6
+	song mus_song0821, 9, 9
+	song mus_song0822, 3, 3
+	song mus_song0823, 3, 3
+	song mus_song0824, 3, 3
+	song mus_song0825, 3, 3
+	song mus_song0826, 4, 4
+	song mus_song0827, 3, 3
+	song mus_song0828, 9, 9
+	song mus_song0829, 3, 3
+	song mus_song0830, 4, 4
+	song mus_song0831, 4, 4
+	song mus_song0832, 3, 3
+	song mus_song0833, 3, 3
+	song mus_song0834, 3, 3
+	song mus_song0835, 3, 3
+	song mus_song0836, 3, 3
+	song mus_song0837, 3, 3
+	song mus_song0838, 3, 3
+	song mus_song0839, 3, 3
+	song mus_song0840, 3, 3
+	song mus_song0841, 9, 9
+	song mus_song0842, 9, 9
+	song mus_song0843, 4, 4
+	song mus_song0844, 3, 3
+	song mus_song0845, 3, 3
+	song mus_song0846, 3, 3
+	song mus_song0847, 9, 9
+	song mus_song0848, 3, 3
+	song mus_song0849, 3, 3
+	song mus_song0850, 3, 3
+	song mus_song0851, 4, 4
+	song mus_song0852, 8, 8
+	song mus_song0853, 8, 8
+	song mus_song0854, 8, 8
+	song mus_song0855, 8, 8
+	song mus_song0856, 8, 8
+	song mus_song0857, 8, 8
+	song mus_song0858, 8, 8
+	song mus_song0859, 8, 8
+	song mus_song0860, 8, 8
+	song mus_song0861, 8, 8
+	song mus_song0862, 8, 8
+	song mus_song0863, 8, 8
+	song mus_song0864, 8, 8
+	song mus_song0865, 8, 8
+	song mus_song0866, 8, 8
+	song mus_song0867, 8, 8
+	song mus_song0868, 8, 8
+	song mus_song0869, 8, 8
+	song mus_song0870, 8, 8
+	song mus_song0871, 8, 8
+	song mus_song0872, 8, 8
+	song mus_song0873, 8, 8
+	song mus_song0874, 8, 8
+	song mus_song0875, 8, 8
+	song mus_song0876, 8, 8
+	song mus_song0877, 8, 8
+	song mus_song0878, 8, 8
+	song mus_song0879, 8, 8
+	song mus_song0880, 8, 8
+	song mus_song0881, 8, 8
+	song mus_song0882, 8, 8
+	song mus_song0883, 8, 8
+	song mus_song0884, 8, 8
+	song mus_song0885, 8, 8
+	song mus_song0886, 8, 8
+	song mus_song0887, 8, 8
+	song mus_song0888, 8, 8
+	song mus_song0889, 8, 8
+	song mus_song0890, 8, 8
+	song mus_song0891, 8, 8
+	song mus_song0892, 8, 8
+	song mus_song0893, 8, 8
+	song mus_song0894, 8, 8
+	song mus_song0895, 8, 8
+	song mus_song0896, 8, 8
+	song mus_song0897, 8, 8
+	song mus_song0898, 8, 8
+	song mus_song0899, 8, 8
+	song mus_song0900, 8, 8
+	song mus_song0901, 8, 8
+	song mus_song0902, 8, 8
+	song mus_song0903, 8, 8
+	song mus_song0904, 8, 8
+	song mus_song0905, 8, 8
+	song mus_song0906, 8, 8
+	song mus_song0907, 8, 8
+	song mus_song0908, 8, 8
+	song mus_song0909, 8, 8
+	song mus_song0910, 8, 8
+	song mus_song0911, 8, 8
+	song mus_song0912, 8, 8
+	song mus_song0913, 8, 8
+	song mus_song0914, 8, 8
+	song mus_song0915, 8, 8
+	song mus_song0916, 8, 8
+	song mus_song0917, 8, 8
+	song mus_song0918, 8, 8
+	song mus_song0919, 8, 8
+	song mus_song0920, 8, 8
+	song mus_song0921, 8, 8
+	song mus_song0922, 8, 8
+	song mus_song0923, 8, 8
+	song mus_song0924, 8, 8
+	song mus_song0925, 8, 8
+	song mus_song0926, 8, 8
+	song mus_song0927, 8, 8
+	song mus_song0928, 8, 8
+	song mus_song0929, 8, 8
+	song mus_song0930, 8, 8
+	song mus_song0931, 8, 8
+	song mus_song0932, 8, 8
+	song mus_song0933, 8, 8
+	song mus_song0934, 8, 8
+	song mus_song0935, 8, 8
+	song mus_song0936, 8, 8
+	song mus_song0937, 8, 8
+	song mus_song0938, 8, 8
+	song mus_song0939, 8, 8
+	song mus_song0940, 8, 8
+	song mus_song0941, 8, 8
+	song mus_song0942, 7, 7
+	song mus_song0943, 7, 7
+	song mus_song0944, 7, 7
+	song mus_song0945, 7, 7
+	song mus_song0946, 7, 7
+	song mus_song0947, 7, 7
+	song mus_song0948, 7, 7
+	song mus_song0949, 7, 7
+	song mus_song0950, 7, 7
+	song mus_song0951, 7, 7
+	song mus_song0952, 7, 7
+	song mus_song0953, 7, 7
+	song mus_song0954, 7, 7
+	song mus_song0955, 7, 7
+	song mus_song0956, 7, 7
+	song mus_song0957, 7, 7
+	song mus_song0958, 3, 3
+	song mus_song0959, 9, 9
+	song mus_song0960, 3, 3
+	song mus_song0961, 9, 9
+	song mus_song0962, 9, 9
+	song mus_song0963, 9, 9
+	song mus_song0964, 5, 5
+	song mus_song0965, 4, 4
+	song mus_song0966, 9, 9
+	song mus_song0967, 9, 9
+	song mus_song0968, 9, 9
+	song mus_song0969, 9, 9
+	song mus_song0970, 9, 9
+	song mus_song0971, 9, 9
+	song mus_song0972, 9, 9
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 2, 2
+	song dummy_song_header, 3, 3
+	song dummy_song_header, 4, 4
+	song dummy_song_header, 5, 5
+	song dummy_song_header, 6, 6
+	song dummy_song_header, 7, 7
+	song dummy_song_header, 8, 8
+	song dummy_song_header, 9, 9
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song0995, 0, 0
+	song mus_song0996, 9, 9
+	song mus_song0997, 7, 7
+	song mus_song0998, 5, 5
+	song mus_song0999, 3, 3
+	song dummy_song_header, 0, 0
+	song mus_song1001, 5, 5
+	song mus_song1002, 5, 5
+	song mus_song1003, 5, 5
+	song mus_song1004, 5, 5
+	song mus_song1005, 5, 5
+	song mus_song1006, 5, 5
+	song mus_song1007, 5, 5
+	song mus_song1008, 5, 5
+	song mus_song1009, 5, 5
+	song mus_song1010, 5, 5
+	song mus_song1011, 5, 5
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1015, 4, 4
+	song mus_song1016, 4, 4
+	song mus_song1017, 4, 4
+	song mus_song1018, 9, 9
+	song mus_song1019, 4, 4
+	song mus_song1020, 9, 9
+	song mus_song1021, 9, 9
+	song mus_song1022, 9, 9
+	song mus_song1023, 9, 9
+	song mus_song1024, 9, 9
+	song mus_song1025, 9, 9
+	song mus_song1026, 9, 9
+	song mus_song1027, 9, 9
+	song mus_song1028, 4, 4
+	song mus_song1029, 3, 3
+	song mus_song1030, 4, 4
+	song mus_song1031, 3, 3
+	song mus_song1032, 4, 4
+	song mus_song1033, 4, 4
+	song mus_song1034, 6, 6
+	song mus_song1035, 4, 4
+	song mus_song1036, 3, 3
+	song mus_song1037, 4, 4
+	song mus_song1038, 3, 3
+	song mus_song1039, 4, 4
+	song mus_song1040, 3, 3
+	song mus_song1041, 3, 3
+	song mus_song1042, 3, 3
+	song mus_song1043, 3, 3
+	song mus_song1044, 4, 4
+	song mus_song1045, 3, 3
+	song mus_song1046, 3, 3
+	song mus_song1047, 4, 4
+	song mus_song1048, 3, 3
+	song mus_song1049, 3, 3
+	song mus_song1050, 1, 1
+	song mus_song1051, 9, 9
+	song mus_song1052, 9, 9
+	song mus_song1053, 6, 6
+	song mus_song1054, 9, 9
+	song mus_song1055, 6, 6
+	song mus_song1056, 9, 9
+	song mus_song1057, 9, 9
+	song mus_song1058, 9, 9
+	song mus_song1059, 9, 9
+	song mus_song1060, 9, 9
+	song mus_song1061, 5, 5
+	song mus_song1062, 5, 5
+	song mus_song1063, 5, 5
+	song mus_song1064, 5, 5
+	song mus_song1065, 5, 5
+	song mus_song1066, 5, 5
+	song mus_song1067, 5, 5
+	song mus_song1068, 5, 5
+	song mus_song1069, 5, 5
+	song mus_song1070, 3, 3
+	song mus_song1071, 4, 4
+	song mus_song1072, 6, 6
+	song mus_song1073, 4, 4
+	song mus_song1074, 3, 3
+	song mus_song1075, 3, 3
+	song mus_song1076, 3, 3
+	song mus_song1077, 3, 3
+	song mus_song1078, 4, 4
+	song mus_song1079, 4, 4
+	song mus_song1080, 4, 4
+	song mus_song1081, 4, 4
+	song mus_song1082, 6, 6
+	song mus_song1083, 6, 6
+	song mus_song1084, 4, 4
+	song mus_song1085, 4, 4
+	song mus_song1086, 4, 4
+	song mus_song1087, 4, 4
+	song mus_song1088, 4, 4
+	song mus_song1089, 4, 4
+	song mus_song1090, 4, 4
+	song mus_song1091, 4, 4
+	song mus_song1092, 4, 4
+	song mus_song1093, 4, 4
+	song mus_song1094, 4, 4
+	song mus_song1095, 4, 4
+	song mus_song1096, 4, 4
+	song mus_song1097, 4, 4
+	song mus_song1098, 4, 4
+	song mus_song1099, 4, 4
+	song mus_song1100, 5, 5
+	song dummy_song_header, 0, 0
+	song mus_song1102, 5, 5
+	song mus_song1103, 4, 4
+	song mus_song1104, 1, 1
+	song mus_song1105, 3, 3
+	song mus_song1106, 3, 3
+	song mus_song1107, 3, 3
+	song mus_song1108, 4, 4
+	song mus_song1109, 3, 3
+	song mus_song1110, 4, 4
+	song mus_song1111, 4, 4
+	song mus_song1112, 3, 3
+	song mus_song1113, 4, 4
+	song mus_song1114, 6, 6
+	song dummy_song_header, 3, 3
+	song mus_song1116, 3, 3
+	song mus_song1117, 3, 3
+	song mus_song1118, 3, 3
+	song mus_song1119, 3, 3
+	song mus_song1120, 3, 3
+	song mus_song1121, 4, 4
+	song mus_song1122, 3, 3
+	song mus_song1123, 4, 4
+	song mus_song1124, 3, 3
+	song mus_song1125, 4, 4
+	song mus_song1126, 3, 3
+	song mus_song1127, 3, 3
+	song mus_song1128, 3, 3
+	song mus_song1129, 3, 3
+	song mus_song1130, 3, 3
+	song mus_song1131, 3, 3
+	song mus_song1132, 4, 4
+	song mus_song1133, 3, 3
+	song mus_song1134, 3, 3
+	song mus_song1135, 3, 3
+	song mus_song1136, 3, 3
+	song mus_song1137, 3, 3
+	song mus_song1138, 3, 3
+	song mus_song1139, 6, 6
+	song mus_song1140, 4, 4
+	song mus_song1141, 4, 4
+	song mus_song1142, 3, 3
+	song dummy_song_header, 6, 6
+	song mus_song1144, 4, 4
+	song mus_song1145, 3, 3
+	song dummy_song_header, 0, 0
+	song mus_song1147, 1, 1
+	song mus_song1148, 1, 1
+	song mus_song1149, 1, 1
+	song mus_song1150, 1, 1
+	song mus_song1151, 1, 1
+	song mus_song1152, 1, 1
+	song mus_song1153, 1, 1
+	song mus_song1154, 1, 1
+	song mus_song1155, 1, 1
+	song mus_song1156, 1, 1
+	song mus_song1157, 1, 1
+	song mus_song1158, 1, 1
+	song mus_song1159, 1, 1
+	song mus_song1160, 1, 1
+	song mus_song1161, 1, 1
+	song mus_song1162, 1, 1
+	song mus_song1163, 1, 1
+	song mus_song1164, 1, 1
+	song mus_song1165, 1, 1
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1169, 1, 1
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1201, 7, 7
+	song mus_song1202, 7, 7
+	song mus_song1203, 7, 7
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1207, 7, 7
+	song mus_song1208, 7, 7
+	song mus_song1209, 7, 7
+	song mus_song1210, 7, 7
+	song mus_song1211, 5, 5
+	song mus_song1212, 6, 6
+	song mus_song1213, 7, 7
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1219, 7, 7
+	song mus_song1220, 7, 7
+	song mus_song1221, 7, 7
+	song mus_song1222, 7, 7
+	song mus_song1223, 7, 7
+	song mus_song1224, 7, 7
+	song mus_song1225, 7, 7
+	song mus_song1226, 7, 7
+	song mus_song1227, 7, 7
+	song mus_song1228, 7, 7
+	song mus_song1229, 7, 7
+	song mus_song1230, 7, 7
+	song mus_song1231, 7, 7
+	song mus_song1232, 7, 7
+	song mus_song1233, 7, 7
+	song mus_song1234, 7, 7
+	song mus_song1235, 7, 7
+	song mus_song1236, 7, 7
+	song mus_song1237, 7, 7
+	song mus_song1238, 7, 7
+	song mus_song1239, 7, 7
+	song mus_song1240, 7, 7
+	song mus_song1241, 7, 7
+	song mus_song1242, 7, 7
+	song mus_song1243, 7, 7
+	song mus_song1244, 7, 7
+	song mus_song1245, 7, 7
+	song mus_song1246, 7, 7
+	song mus_song1247, 7, 7
+	song mus_song1248, 7, 7
+	song mus_song1249, 7, 7
+	song mus_song1250, 7, 7
+	song mus_song1251, 7, 7
+	song mus_song1252, 7, 7
+	song mus_song1253, 7, 7
+	song mus_song1254, 7, 7
+	song mus_song1255, 7, 7
+	song mus_song1256, 7, 7
+	song mus_song1257, 7, 7
+	song mus_song1258, 7, 7
+	song mus_song1259, 7, 7
+	song mus_song1260, 7, 7
+	song mus_song1261, 7, 7
+	song mus_song1262, 7, 7
+	song mus_song1263, 7, 7
+	song mus_song1264, 7, 7
+	song mus_song1265, 7, 7
+	song mus_song1266, 7, 7
+	song mus_song1267, 7, 7
+	song mus_song1268, 7, 7
+	song mus_song1269, 7, 7
+	song mus_song1270, 7, 7
+	song mus_song1271, 7, 7
+	song mus_song1272, 7, 7
+	song mus_song1273, 7, 7
+	song mus_song1274, 7, 7
+	song mus_song1275, 7, 7
+	song mus_song1276, 7, 7
+	song mus_song1277, 7, 7
+	song mus_song1278, 7, 7
+	song mus_song1279, 7, 7
+	song mus_song1280, 7, 7
+	song dummy_song_header, 0, 0
+	song mus_song1282, 7, 7
+	song mus_song1283, 7, 7
+	song mus_song1284, 7, 7
+	song mus_song1285, 7, 7
+	song mus_song1286, 7, 7
+	song mus_song1287, 7, 7
+	song mus_song1288, 7, 7
+	song mus_song1289, 7, 7
+	song mus_song1290, 7, 7
+	song mus_song1291, 7, 7
+	song mus_song1292, 7, 7
+	song mus_song1293, 7, 7
+	song mus_song1294, 7, 7
+	song mus_song1295, 7, 7
+	song mus_song1296, 7, 7
+	song mus_song1297, 7, 7
+	song mus_song1298, 7, 7
+	song mus_song1299, 7, 7
+	song mus_song1300, 7, 7
+	song mus_song1301, 7, 7
+	song mus_song1302, 7, 7
+	song mus_song1303, 7, 7
+	song mus_song1304, 7, 7
+	song mus_song1305, 7, 7
+	song mus_song1306, 7, 7
+	song mus_song1307, 7, 7
+	song mus_song1308, 7, 7
+	song mus_song1309, 7, 7
+	song mus_song1310, 7, 7
+	song mus_song1311, 7, 7
+	song mus_song1312, 7, 7
+	song mus_song1313, 7, 7
+	song mus_song1314, 7, 7
+	song mus_song1315, 7, 7
+	song mus_song1316, 7, 7
+	song mus_song1317, 7, 7
+	song mus_song1318, 7, 7
+	song mus_song1319, 7, 7
+	song mus_song1320, 7, 7
+	song mus_song1321, 7, 7
+	song mus_song1322, 7, 7
+	song mus_song1323, 7, 7
+	song mus_song1324, 7, 7
+	song mus_song1325, 7, 7
+	song mus_song1326, 7, 7
+	song mus_song1327, 7, 7
+	song mus_song1328, 7, 7
+	song mus_song1329, 7, 7
+	song mus_song1330, 7, 7
+	song mus_song1331, 7, 7
+	song mus_song1332, 7, 7
+	song mus_song1333, 7, 7
+	song mus_song1334, 7, 7
+	song mus_song1335, 7, 7
+	song mus_song1336, 7, 7
+	song mus_song1337, 7, 7
+	song mus_song1338, 7, 7
+	song mus_song1339, 7, 7
+	song mus_song1340, 7, 7
+	song mus_song1341, 7, 7
+	song mus_song1342, 7, 7
+	song mus_song1343, 7, 7
+	song mus_song1344, 7, 7
+	song mus_song1345, 7, 7
+	song mus_song1346, 7, 7
+	song mus_song1347, 7, 7
+	song mus_song1348, 7, 7
+	song mus_song1349, 7, 7
+	song mus_song1350, 7, 7
+	song mus_song1351, 7, 7
+	song mus_song1352, 7, 7
+	song mus_song1353, 7, 7
+	song mus_song1354, 7, 7
+	song mus_song1355, 7, 7
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1360, 7, 7
+	song mus_song1361, 7, 7
+	song mus_song1362, 7, 7
+	song mus_song1363, 7, 7
+	song mus_song1364, 3, 3
+	song mus_song1365, 2, 2
+	song mus_song1366, 2, 2
+	song mus_song1367, 2, 2
+	song mus_song1368, 2, 2
+	song mus_song1369, 2, 2
+	song mus_song1370, 2, 2
+	song mus_song1371, 7, 7
+	song mus_song1372, 7, 7
+	song mus_song1373, 7, 7
+	song mus_song1374, 7, 7
+	song mus_song1375, 7, 7
+	song mus_song1376, 7, 7
+	song mus_song1377, 7, 7
+	song mus_song1378, 7, 7
+	song mus_song1379, 7, 7
+	song mus_song1380, 7, 7
+	song mus_song1381, 3, 3
+	song mus_song1382, 4, 4
+	song mus_song1383, 4, 4
+	song mus_song1384, 4, 4
+	song mus_song1385, 4, 4
+	song mus_song1386, 4, 4
+	song mus_song1387, 4, 4
+	song mus_song1388, 6, 6
+	song mus_song1389, 6, 6
+	song mus_song1390, 6, 6
+	song mus_song1391, 4, 4
+	song mus_song1392, 9, 9
+	song mus_song1393, 6, 6
+	song mus_song1394, 4, 4
+	song mus_song1395, 3, 3
+	song mus_song1396, 3, 3
+	song mus_song1397, 1, 1
+	song mus_song1398, 5, 5
+	song mus_song1399, 5, 5
+	song mus_song1400, 3, 3
+	song mus_song1401, 4, 4
+	song mus_song1402, 4, 4
+	song mus_song1403, 3, 3
+	song mus_song1404, 3, 3
+	song mus_song1405, 4, 4
+	song mus_song1406, 1, 1
+	song mus_song1407, 1, 1
+	song mus_song1408, 1, 1
+	song mus_song1409, 1, 1
+	song mus_song1410, 1, 1
+	song mus_song1411, 6, 6
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1425, 1, 1
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1430, 6, 6
+	song mus_song1431, 6, 6
+	song mus_song1432, 6, 6
+	song mus_song1433, 6, 6
+	song mus_song1434, 6, 6
+	song mus_song1435, 6, 6
+	song mus_song1436, 6, 6
+	song mus_song1437, 6, 6
+	song mus_song1438, 9, 9
+	song mus_song1439, 9, 9
+	song mus_song1440, 9, 9
+	song mus_song1441, 9, 9
+	song mus_song1442, 9, 9
+	song mus_song1443, 9, 9
+	song mus_song1444, 9, 9
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1492, 6, 6
+	song dummy_song_header, 0, 0
+	song mus_song1494, 4, 4
+	song mus_song1495, 4, 4
+	song mus_song1496, 6, 6
+	song mus_song1497, 9, 9
+	song mus_song1498, 6, 6
+	song mus_song1499, 5, 5
+	song mus_song1500, 6, 6
+	song mus_song1501, 6, 6
+	song mus_song1502, 6, 6
+	song mus_song1503, 6, 6
+	song mus_song1504, 6, 6
+	song mus_song1505, 6, 6
+	song mus_song1506, 6, 6
+	song mus_song1507, 6, 6
+	song mus_song1508, 6, 6
+	song mus_song1509, 6, 6
+	song mus_song1510, 6, 6
+	song mus_song1511, 0, 0
+	song mus_song1512, 0, 0
+	song mus_song1513, 1, 1
+	song mus_song1514, 0, 0
+	song mus_song1515, 0, 0
+	song mus_song1516, 0, 0
+	song mus_song1517, 0, 0
+	song mus_song1518, 0, 0
+	song mus_song1519, 9, 9
+	song mus_song1520, 6, 6
+	song mus_song1521, 6, 6
+	song mus_song1522, 6, 6
+	song mus_song1523, 6, 6
+	song mus_song1524, 6, 6
+	song mus_song1525, 6, 6
+	song mus_song1526, 6, 6
+	song mus_song1527, 6, 6
+	song mus_song1528, 6, 6
+	song mus_song1529, 6, 6
+	song mus_song1530, 6, 6
+	song mus_song1531, 6, 6
+	song mus_song1532, 6, 6
+	song mus_song1533, 6, 6
+	song mus_song1534, 6, 6
+	song mus_song1535, 6, 6
+	song mus_song1536, 6, 6
+	song mus_song1537, 6, 6
+	song mus_song1538, 3, 3
+	song mus_song1539, 3, 3
+	song mus_song1540, 6, 6
+	song mus_song1541, 6, 6
+	song mus_song1542, 6, 6
+	song mus_song1543, 4, 4
+	song mus_song1544, 3, 3
+	song mus_song1545, 4, 4
+	song mus_song1546, 4, 4
+	song mus_song1547, 9, 9
+	song mus_song1548, 9, 9
+	song mus_song1549, 0, 0
+	song mus_song1550, 7, 7
+	song mus_song1551, 7, 7
+	song mus_song1552, 7, 7
+	song mus_song1553, 7, 7
+	song mus_song1554, 7, 7
+	song mus_song1555, 7, 7
+	song mus_song1556, 7, 7
+	song mus_song1557, 7, 7
+	song mus_song1558, 7, 7
+	song mus_song1559, 6, 6
+	song mus_song1560, 4, 4
+	song mus_song1561, 4, 4
+	song mus_song1562, 4, 4
+	song dummy_song_header, 0, 0
+	song mus_song1564, 4, 4
+	song mus_song1565, 4, 4
+	song mus_song1566, 4, 4
+	song mus_song1567, 5, 5
+	song mus_song1568, 9, 9
+	song mus_song1569, 3, 3
+	song mus_song1570, 3, 3
+	song mus_song1571, 4, 4
+	song mus_song1572, 6, 6
+	song mus_song1573, 6, 6
+	song mus_song1574, 3, 3
+	song mus_song1575, 9, 9
+	song mus_song1576, 3, 3
+	song mus_song1577, 3, 3
+	song mus_song1578, 7, 7
+	song mus_song1579, 7, 7
+	song mus_song1580, 4, 4
+	song mus_song1581, 3, 3
+	song mus_song1582, 4, 4
+	song mus_song1583, 3, 3
+	song mus_song1584, 3, 3
+	song mus_song1585, 3, 3
+	song mus_song1586, 3, 3
+	song mus_song1587, 4, 4
+	song mus_song1588, 7, 7
+	song mus_song1589, 4, 4
+	song mus_song1590, 9, 9
+	song mus_song1591, 4, 4
+	song mus_song1592, 9, 9
+	song mus_song1593, 4, 4
+	song mus_song1594, 3, 3
+	song mus_song1595, 3, 3
+	song mus_song1596, 4, 4
+	song mus_song1597, 4, 4
+	song mus_song1598, 4, 4
+	song mus_song1599, 6, 6
+	song mus_song1600, 4, 4
+	song mus_song1601, 4, 4
+	song mus_song1602, 4, 4
+	song mus_song1603, 6, 6
+	song mus_song1604, 4, 4
+	song mus_song1605, 4, 4
+	song mus_song1606, 3, 3
+	song mus_song1607, 3, 3
+	song mus_song1608, 3, 3
+	song mus_song1609, 4, 4
+	song mus_song1610, 4, 4
+	song mus_song1611, 4, 4
+	song mus_song1612, 9, 9
+	song mus_song1613, 9, 9
+	song mus_song1614, 5, 5
+	song mus_song1615, 3, 3
+	song mus_song1616, 6, 6
+	song mus_song1617, 6, 6
+	song mus_song1618, 5, 5
+	song mus_song1619, 4, 4
+	song mus_song1620, 4, 4
+	song mus_song1621, 4, 4
+	song mus_song1622, 4, 4
+	song mus_song1623, 5, 5
+	song mus_song1624, 4, 4
+	song mus_song1625, 4, 4
+	song mus_song1626, 4, 4
+	song mus_song1627, 4, 4
+	song mus_song1628, 4, 4
+	song mus_song1629, 4, 4
+	song mus_song1630, 4, 4
+	song mus_song1631, 4, 4
+	song mus_song1632, 8, 8
+	song mus_song1633, 8, 8
+	song mus_song1634, 8, 8
+	song mus_song1635, 4, 4
+	song mus_song1636, 4, 4
+	song mus_song1637, 4, 4
+	song mus_song1638, 4, 4
+	song mus_song1639, 9, 9
+	song mus_song1640, 4, 4
+	song mus_song1641, 4, 4
+	song mus_song1642, 4, 4
+	song mus_song1643, 4, 4
+	song mus_song1644, 4, 4
+	song mus_song1645, 3, 3
+	song mus_song1646, 4, 4
+	song mus_song1647, 4, 4
+	song mus_song1648, 3, 3
+	song mus_song1649, 1, 1
+	song mus_song1650, 3, 3
+	song mus_song1651, 9, 9
+	song mus_song1652, 9, 9
+	song mus_song1653, 7, 7
+	song mus_song1654, 3, 3
+	song mus_song1655, 3, 3
+	song mus_song1656, 7, 7
+	song mus_song1657, 3, 3
+	song mus_song1658, 4, 4
+	song mus_song1659, 3, 3
+	song mus_song1660, 3, 3
+	song mus_song1661, 3, 3
+	song mus_song1662, 3, 3
+	song mus_song1663, 9, 9
+	song mus_song1664, 3, 3
+	song mus_song1665, 4, 4
+	song mus_song1666, 3, 3
+	song mus_song1667, 4, 4
+	song mus_song1668, 4, 4
+	song mus_song1669, 3, 3
+	song mus_song1670, 9, 9
+	song mus_song1671, 3, 3
+	song mus_song1672, 9, 9
+	song mus_song1673, 9, 9
+	song mus_song1674, 9, 9
+	song mus_song1675, 9, 9
+	song mus_song1676, 9, 9
+	song mus_song1677, 9, 9
+	song mus_song1678, 9, 9
+	song mus_song1679, 3, 3
+	song mus_song1680, 9, 9
+	song mus_song1681, 9, 9
+	song mus_song1682, 4, 4
+	song mus_song1683, 4, 4
+	song mus_song1684, 4, 4
+	song mus_song1685, 9, 9
+	song mus_song1686, 9, 9
+	song mus_song1687, 4, 4
+	song mus_song1688, 3, 3
+	song mus_song1689, 3, 3
+	song mus_song1690, 3, 3
+	song mus_song1691, 9, 9
+	song mus_song1692, 7, 7
+	song mus_song1693, 7, 7
+	song mus_song1694, 8, 8
+	song mus_song1695, 7, 7
+	song mus_song1696, 9, 9
+	song mus_song1697, 9, 9
+	song mus_song1698, 4, 4
+	song mus_song1699, 5, 5
+	song mus_song1700, 3, 3
+	song mus_song1701, 3, 3
+	song mus_song1702, 9, 9
+	song mus_song1703, 4, 4
+	song mus_song1704, 4, 4
+	song dummy_song_header, 0, 0
+	song mus_song1706, 1, 1
+	song mus_song1707, 1, 1
+	song mus_song1708, 1, 1
+	song mus_song1709, 1, 1
+	song mus_song1710, 1, 1
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1725, 1, 1
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1747, 1, 1
+	song mus_song1748, 1, 1
+	song mus_song1749, 1, 1
+	song mus_song1750, 1, 1
+	song mus_song1751, 1, 1
+	song mus_song1752, 1, 1
+	song mus_song1753, 1, 1
+	song mus_song1754, 1, 1
+	song mus_song1755, 1, 1
+	song mus_song1756, 1, 1
+	song mus_song1757, 1, 1
+	song mus_song1758, 1, 1
+	song mus_song1759, 1, 1
+	song mus_song1760, 1, 1
+	song mus_song1761, 1, 1
+	song mus_song1762, 1, 1
+	song mus_song1763, 1, 1
+	song mus_song1764, 1, 1
+	song mus_song1765, 1, 1
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1769, 1, 1
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1793, 1, 1
+	song mus_song1794, 1, 1
+	song mus_song1795, 1, 1
+	song mus_song1796, 1, 1
+	song mus_song1797, 1, 1
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1807, 1, 1
+	song mus_song1808, 1, 1
+	song mus_song1809, 1, 1
+	song mus_song1810, 1, 1
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1825, 1, 1
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1847, 1, 1
+	song mus_song1848, 1, 1
+	song mus_song1849, 1, 1
+	song mus_song1850, 1, 1
+	song mus_song1851, 1, 1
+	song mus_song1852, 1, 1
+	song mus_song1853, 1, 1
+	song mus_song1854, 1, 1
+	song mus_song1855, 1, 1
+	song mus_song1856, 1, 1
+	song mus_song1857, 1, 1
+	song mus_song1858, 1, 1
+	song mus_song1859, 1, 1
+	song mus_song1860, 1, 1
+	song mus_song1861, 1, 1
+	song mus_song1862, 1, 1
+	song mus_song1863, 1, 1
+	song mus_song1864, 1, 1
+	song mus_song1865, 1, 1
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1869, 1, 1
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1897, 1, 1
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1901, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1904, 9, 9
+	song dummy_song_header, 0, 0
+	song mus_song1906, 9, 9
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1911, 0, 0
+	song mus_song1912, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1914, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1916, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song dummy_song_header, 0, 0
+	song mus_song1935, 1, 1
+	song mus_song1936, 1, 1
+	song mus_song1937, 1, 1
+	song mus_song1938, 1, 1
+	song mus_song1939, 6, 6
+	song mus_song1940, 1, 1
+	song mus_song1941, 1, 1
+	song mus_song1942, 1, 1
+	song mus_song1943, 1, 1
+	song dummy_song_header, 0, 0
+	song mus_song1945, 1, 1
+	song mus_song1946, 6, 6
+	song mus_song1947, 1, 1
+	song mus_song1948, 1, 1
+	song mus_song1949, 1, 1
+	song mus_song1950, 1, 1
+	song mus_song1951, 1, 1
+	song mus_song1952, 1, 1
+	song mus_song1953, 1, 1
+	song mus_song1954, 1, 1
+	song mus_song1955, 1, 1
+	song mus_song1956, 1, 1
+	song mus_song1957, 1, 1
+	song mus_song1958, 1, 1
+	song mus_song1959, 1, 1
+	song mus_song1960, 1, 1
+	song mus_song1961, 1, 1
+	song mus_song1962, 1, 1
+	song mus_song1963, 1, 1
+	song mus_song1964, 1, 1
+	song mus_song1965, 1, 1
+	song mus_song1966, 1, 1
+	song mus_song1967, 1, 1
+	song test, 0, 0
+	song test2, 0, 0
 
 	.align 2
 dummy_song_header::
