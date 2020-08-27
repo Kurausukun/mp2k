@@ -1,4 +1,4 @@
-gNumMusicPlayers = 4;
+gNumMusicPlayers = 1;
 gMaxLines = 0;
 
 SECTIONS {

@@ -357,16 +357,14 @@ channel_vol_calc:
         LDRB R0, [R0, #VAR_MASTER_VOL]
         ADD	R0, #1
         MUL	R5, R0, R5
-        /* left side volume */
+        /* left side volume (mono) */
         LDRB R0, [R4, #CHN_VOL_2]
-        MUL	R0, R5
-        LSR	R0, R0, #13
-        MOV	R10, R0                     @ R10 = left volume
-        /* right side volume */
-        LDRB R0, [R4, #CHN_VOL_1]
-        MUL	R0, R5
-        LSR	R0, R0, #13
-        MOV	R11, R0						@ R11 = right volume
+        LDRB R1, [R4, #CHN_VOL_1]
+        ADD    R0, R0, R1
+        MUL    R0, R5
+        LSR    R0, R0, #14
+        MOV    R10, R0
+        MOV    R11, R0
         /*
          * Now we get closer to actual mixing:
          * For looped samples some additional operations are required
