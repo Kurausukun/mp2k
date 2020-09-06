@@ -1,7 +1,5 @@
 	.align 2
-
-	.global	gSongTable
-gSongTable:
+gSongTable::
 	song mus_dummy, 0, 0
 	song mus_tetsuji, 0, 0          @ Unused - TETSUJI
 	song mus_field13, 0, 0          @ Unused - Route 38
@@ -217,6 +215,7 @@ gSongTable:
 	song trainer_test, 0, 0
 	song mus_rg_load01_new, 0, 0
 	song mus_heartache_cut, 0, 0
+	song mus_darkcave, 0, 0
 	song mus_route38, 0, 0
 	song mus_alph, 0, 0
 	song mus_ruins, 0, 0

@@ -11,8 +11,7 @@
 	.equ	__total_mplay_n, 4
 
 	.align 2
-	.global	gMPlayTable
-gMPlayTable:
+gMPlayTable::
 	music_player m4a_mplay000, m4a_track000, 16, 0
 	music_player m4a_mplay001, m4a_track001,  3, 1
 	music_player m4a_mplay002, m4a_track002,  9, 1

@@ -648,6 +648,9 @@ $(MID_SUBDIR)/mus_rg_load01_new.s: %.s: %.mid
 $(MID_SUBDIR)/mus_heartache_cut.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G215 -V085
 
+$(MID_SUBDIR)/mus_darkcave.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G216 -V090
+
 $(MID_SUBDIR)/mus_route38.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G217 -V090
 
@@ -673,4 +676,4 @@ $(MID_SUBDIR)/se_phone.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G129 -V120
 
 $(MID_SUBDIR)/register.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G179 -V090
+	$(MID) $< $@ -E -R$(STD_REVERB) -G178 -V090
