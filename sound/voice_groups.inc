@@ -453,6 +453,7 @@ voicegroup007:: @ 8676AE4
 voicegroup008:: @ 8677108
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_trombone_39, 255, 0, 255, 165  @ 8677108
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_trombone_51, 255, 0, 255, 165  @ 8677114
+	voice_directsound 60, 0, DirectSoundWaveData_unknown_trombone_51_short, 255, 0, 255, 165
 
 	.align 2
 voicegroup009:: @ 8677120
@@ -22151,7 +22152,7 @@ voicegroup215::
 	voice_square_1 0, 2, 0, 0, 15, 0
 	voice_square_1 0, 2, 0, 0, 15, 0
 	voice_square_1 0, 2, 0, 0, 15, 0
-	voice_directsound 60, 0, DirectSoundWaveData_classical_choir_voice_ahhs, 255, 0, 255, 0
+	voice_directsound 60, 0, DirectSoundWaveData_classical_choir_voice_ahhs, 127, 0, 255, 165
 	voice_square_1 0, 2, 0, 0, 15, 0
 	voice_square_1 0, 2, 0, 0, 15, 0
 	voice_keysplit voicegroup007, KeySplitTable3
@@ -22179,7 +22180,7 @@ voicegroup215::
 	voice_square_1 0, 2, 0, 0, 15, 0
 	voice_square_1 0, 2, 0, 0, 15, 0
 	voice_square_1_alt 0, 1, 0, 0, 15, 0
-	voice_programmable_wave_alt ProgrammableWaveData_86B4920, 0, 7, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_triangle, 255, 0, 255, 0
 	voice_square_2_alt 0, 0, 0, 15, 0
 	voice_square_1 0, 2, 0, 0, 15, 0
 	voice_square_1 0, 2, 0, 0, 15, 0

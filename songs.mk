@@ -677,3 +677,9 @@ $(MID_SUBDIR)/se_phone.s: %.s: %.mid
 
 $(MID_SUBDIR)/register.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G178 -V090
+
+$(MID_SUBDIR)/utenemy.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G117 -V100 -P1
+
+$(MID_SUBDIR)/pokecom2.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G162 -V096

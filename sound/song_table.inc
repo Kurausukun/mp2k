@@ -225,6 +225,8 @@ gSongTable::
 	song defeatedrse, 0, 0
 	song se_phone, 1, 1
 	song register, 2, 2
+	song utenemy, 0, 0
+	song pokecom2, 0, 0
 
 	.align 2
 dummy_song_header::

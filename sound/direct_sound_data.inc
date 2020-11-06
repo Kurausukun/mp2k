@@ -199,6 +199,10 @@ DirectSoundWaveData_unknown_trombone_51::
 	.incbin "sound/direct_sound_samples/unknown_trombone_51.bin"
 
 	.align 2
+DirectSoundWaveData_unknown_trombone_51_short::
+	.incbin "sound/direct_sound_samples/unknown_trombone_51_short.bin"
+
+	.align 2
 DirectSoundWaveData_sc88_french_horn_60::
 	.incbin "sound/direct_sound_samples/sc88_french_horn_60.bin"
 
@@ -637,3 +641,15 @@ DirectSoundWaveData_octavestrings::
 	.align 2
 DirectSoundWaveData_octavestrings2::
 	.incbin "sound/direct_sound_samples/octavestrings2.bin"
+
+	.align 2
+DirectSoundWaveData_duty::
+	.incbin "sound/direct_sound_samples/synth/duty.bin"
+
+	.align 2
+DirectSoundWaveData_saw::
+	.incbin "sound/direct_sound_samples/synth/saw.bin"
+
+	.align 2
+DirectSoundWaveData_triangle::
+	.incbin "sound/direct_sound_samples/synth/triangle.bin"
