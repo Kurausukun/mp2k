@@ -1,5 +1,5 @@
 	.align 2
-.set KeySplitTable1, .	@ 0x08102034
+KeySplitTable_08102034::	@ 0x08102034
 	.byte	4
 	.byte	60
 	.byte	0
@@ -74,7 +74,7 @@
 	.byte	0
 
 	.align 2
-.set KeySplitTable2, .	@ 0x0810207C
+KeySplitTable_0810207C::	@ 0x0810207C
 	.byte	1
 	.byte	1
 	.byte	1
@@ -137,7 +137,7 @@
 	.byte	0
 
 	.align 2
-.set KeySplitTable3, .	@ 0x081020B8
+KeySplitTable_081020B8::	@ 0x081020B8
 	.byte	0
 	.byte	0
 	.byte	0
@@ -188,7 +188,7 @@
 	.byte	0
 
 	.align 2
-.set KeySplitTable4, .	@ 0x081020E8
+KeySplitTable_081020E8::	@ 0x081020E8
 	.byte	0
 	.byte	0
 	.byte	0
@@ -239,7 +239,7 @@
 	.byte	2
 
 	.align 2
-.set KeySplitTable5, .	@ 0x08102118
+KeySplitTable_08102118::	@ 0x08102118
 	.byte	0
 	.byte	0
 	.byte	0
@@ -302,7 +302,7 @@
 	.byte	0
 
 	.align 2
-.set KeySplitTable6, .	@ 0x08102154
+KeySplitTable_08102154::	@ 0x08102154
 	.byte	0
 	.byte	0
 	.byte	0
@@ -353,7 +353,7 @@
 	.byte	1
 
 	.align 2
-.set KeySplitTable7, .	@ 0x08102184
+KeySplitTable_08102184::	@ 0x08102184
 	.byte	0
 	.byte	0
 	.byte	0
