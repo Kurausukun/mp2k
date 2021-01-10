@@ -683,3 +683,6 @@ $(MID_SUBDIR)/utenemy.s: %.s: %.mid
 
 $(MID_SUBDIR)/pokecom2.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G162 -V096
+
+$(MID_SUBDIR)/mus_poke_radar.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G225 -V100

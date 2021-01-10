@@ -6,7 +6,7 @@
 	@ first entry is VGR, second is master volume.. no idea what they do
 	.global	app_song_table
 app_song_table:
-	.rept 224
+	.rept 227
 	.short	 0,  0
 	.endr
 
