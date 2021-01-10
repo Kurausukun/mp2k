@@ -137,7 +137,7 @@ $(OBJ_DIR)/ld_script.ld: ld_script.txt
 	cd $(OBJ_DIR) && sed "s#tools/#../../tools/#g" ../../ld_script.txt > ld_script.ld
 
 $(OBJ_DIR)/sym_iwram.ld: sym_iwram.txt
-	cp $< $@ 
+	cp $< $@
 
 $(ELF): %.elf: $(OBJS) $(OBJ_DIR)/ld_script.ld $(OBJ_DIR)/sym_iwram.ld
 	cd $(OBJ_DIR) && $(LD) -T ld_script.ld -Map ../../$(MAP) -o ../../$@ $(OBJS_REL) $(LIB)
