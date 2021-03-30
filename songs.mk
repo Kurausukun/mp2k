@@ -672,9 +672,6 @@ $(MID_SUBDIR)/battletower_gba.s: %.s: %.mid
 $(MID_SUBDIR)/defeatedrse.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G208 -V100
 
-$(MID_SUBDIR)/se_phone.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G129 -V120
-
 $(MID_SUBDIR)/register.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G178 -V090
 
