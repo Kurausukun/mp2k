@@ -1257,3 +1257,29 @@ ply_mod: @ 0x08000DD8
 _08000DE8:
 	bx ip
 	.align 2, 0
+
+	.bss
+	.global gMPlayTrack000
+gMPlayTrack000:
+	.space 0x50*10
+	.size gMPlayTrack000, .-gMPlayTrack000
+
+	.global gMPlayTrack001
+gMPlayTrack001:
+	.space 0x50*2
+	.size gMPlayTrack001, .-gMPlayTrack001
+
+	.global gMPlayTrack002
+gMPlayTrack002:
+	.space 0x50*9
+	.size gMPlayTrack002, .-gMPlayTrack002
+
+	.global gMPlayTrack003
+gMPlayTrack003:
+	.space 0x50*2
+	.size gMPlayTrack003, .-gMPlayTrack003
+
+	.global gMPlayTrack004
+gMPlayTrack004:
+	.space 0x50*2
+	.size gMPlayTrack004, .-gMPlayTrack004

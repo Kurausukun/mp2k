@@ -9,10 +9,11 @@ ALIGNED(4) struct SoundInfo gSoundInfo;
 
 void *gMPlayJumpTable[36];
 struct CgbChannel gCgbChans[4];
-struct MusicPlayerInfo gMPlayInfo_BGM;
-struct MusicPlayerInfo gMPlayInfo_SE1;
-struct MusicPlayerInfo gMPlayInfo_SE2;
-struct MusicPlayerInfo gMPlayInfo_SE3;
+struct MusicPlayerInfo gMPlayInfo000;
+struct MusicPlayerInfo gMPlayInfo001;
+struct MusicPlayerInfo gMPlayInfo002;
+struct MusicPlayerInfo gMPlayInfo003;
+struct MusicPlayerInfo gMPlayInfo004;
 u8 gMPlayMemAccArea[0x10];
 
 u32 MidiKeyToFreq(struct WaveData *wav, u8 key, u8 fineAdjust)
@@ -71,7 +72,7 @@ void m4aSoundInit(void)
     MPlayExtender(gCgbChans);
     m4aSoundMode(SOUND_MODE_DA_BIT_8
                | SOUND_MODE_FREQ_42048
-               | (12 << SOUND_MODE_MASVOL_SHIFT)
+               | (10 << SOUND_MODE_MASVOL_SHIFT)
                | (6 << SOUND_MODE_MAXCHN_SHIFT));
     for (i = 0; i < NUM_MUSIC_PLAYERS; ++i)
     {
