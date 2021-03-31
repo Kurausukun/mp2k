@@ -61,3 +61,4 @@ Temporary Items
 sound/songs/midi/*.s
 ddump
 build/
+!sound/direct_sound_samples/synth/*
