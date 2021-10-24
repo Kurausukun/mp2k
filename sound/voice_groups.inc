@@ -2165,7 +2165,7 @@ gUnknown_080F9604::	@ 0x080F9604
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@080F9778
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@080F9784
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@080F9790
-	voice_directsound 60, 0, DirectSoundWaveData_0813B918, 255, 252, 128, 0	@080F979C
+	voice_directsound 60, 0, DirectSoundWaveData_084363E8, 255, 252, 128, 0	@080F979C
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@080F97A8
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@080F97B4
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@080F97C0

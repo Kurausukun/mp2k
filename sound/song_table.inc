@@ -61,6 +61,8 @@ gSongTable::
 	song dummy_song_header, 0, 0
 	song song0059, 0, 0
 	song song0060, 0, 0
+	song song0061, 0, 0
+	song song0062, 0, 0
 
 	.align 2
 dummy_song_header::
