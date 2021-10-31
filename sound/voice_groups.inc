@@ -1551,7 +1551,7 @@ voicegroup013::	@ 0x0811DD1C
 	voice_directsound 60, 0, DirectSoundWaveData_0B4D3B4, 255, 0, 255, 0	@0811E310
 
 	.align 2
-voicegroup014:	@ 0x0811E31C
+voicegroup014::	@ 0x0811E31C
 	voice_directsound 60, 0, DirectSoundWaveData_09F4C94, 255, 0, 255, 0	@0811E31C
 	voice_directsound 60, 0, DirectSoundWaveData_0786A30, 255, 0, 255, 0	@0811E328
 	voice_directsound 60, 0, DirectSoundWaveData_07A1EEC, 255, 0, 255, 0	@0811E334

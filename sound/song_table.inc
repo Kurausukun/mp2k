@@ -1,5 +1,4 @@
 	.align 2
-
 gSongTable::	@ 0x08120E94
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0

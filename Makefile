@@ -16,11 +16,11 @@ else
 EXE :=
 endif
 
-AS := arm-none-eabi-as
-LD := arm-none-eabi-ld
-GCC := arm-none-eabi-gcc
-OBJCOPY := arm-none-eabi-objcopy
-CPP := arm-none-eabi-cpp
+AS := $(DEVKITARM)/bin/arm-none-eabi-as
+LD := $(DEVKITARM)/bin/arm-none-eabi-ld
+GCC := $(DEVKITARM)/bin/arm-none-eabi-gcc
+OBJCOPY := $(DEVKITARM)/bin/arm-none-eabi-objcopy
+CPP := $(DEVKITARM)/bin/arm-none-eabi-cpp
 SHA1SUM := sha1sum -c
 GBAFIX := tools/gbafix/gbafix
 MID := tools/mid2agb/mid2agb
