@@ -16,11 +16,13 @@ else
 EXE :=
 endif
 
-AS := arm-none-eabi-as
-LD := arm-none-eabi-ld
-GCC := arm-none-eabi-gcc
-OBJCOPY := arm-none-eabi-objcopy
-CPP := arm-none-eabi-cpp
+PREFIX := /opt/cross/bin/
+
+AS := $(PREFIX)arm-none-eabi-as
+LD := $(PREFIX)arm-none-eabi-ld
+GCC := $(PREFIX)arm-none-eabi-gcc
+OBJCOPY := $(PREFIX)arm-none-eabi-objcopy
+CPP := $(PREFIX)arm-none-eabi-cpp
 SHA1SUM := sha1sum -c
 GBAFIX := tools/gbafix/gbafix
 MID := tools/mid2agb/mid2agb
@@ -115,6 +117,7 @@ clean: mostlyclean clean-tools
 mostlyclean:
 	rm -f $(ROM) $(ELF) $(MAP) $(OBJS)
 	rm -f sound/direct_sound_samples/*.bin
+	rm -f sound/songs/midi/*.s
 	
 clean-tools:
 	@$(foreach tooldir,$(TOOLDIRS),$(MAKE) clean -C $(tooldir);)

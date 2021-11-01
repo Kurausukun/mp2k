@@ -210,6 +210,7 @@ gSongTable::
 	song mus_rg_t_tower, 0, 0       @ Trainer Tower (FRLG)
 	song mus_rg_slowmasara, 0, 0    @ Epilogue (FRLG)
 	song mus_rg_tvnoize, 0, 0       @ Teachy TV Menu (FRLG)
+	song mus_weather_kyogre, 0, 0
 	song mus_hinsi, 0, 0
 	song gymleader, 0, 0
 	song trainer_test, 0, 0
@@ -227,6 +228,12 @@ gSongTable::
 	song utenemy, 0, 0
 	song pokecom2, 0, 0
 	song mus_poke_radar, 0, 0
+	song mus_rival_log, 0, 0
+	song cancel, 0, 0
+	song cut, 0, 0
+	song logo, 0, 0
+	song ok, 0, 0
+	song piron, 0, 0
 
 	.align 2
 dummy_song_header::

@@ -633,6 +633,9 @@ $(MID_SUBDIR)/mus_vs_rekku.s: %.s: %.mid
 $(MID_SUBDIR)/mus_yama_eye.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G097 -V076
 
+$(MID_SUBDIR)/mus_weather_kyogre.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G227 -V127
+
 $(MID_SUBDIR)/mus_hinsi.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G213 -V085 -X
 
@@ -683,3 +686,6 @@ $(MID_SUBDIR)/pokecom2.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_poke_radar.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G225 -V100
+
+$(MID_SUBDIR)/mus_rival_log.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G124 -V127
