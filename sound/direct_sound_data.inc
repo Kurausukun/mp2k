@@ -689,3 +689,7 @@ DirectSoundWaveData_sine::
 	.align 2
 DirectSoundWaveData_startup::
 	.incbin "sound/direct_sound_samples/startup.bin"
+
+	.align 2
+DirectSoundWaveData_square25::
+	.incbin "sound/direct_sound_samples/square25.bin"

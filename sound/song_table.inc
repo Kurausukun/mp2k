@@ -229,6 +229,8 @@ gSongTable::
 	song pokecom2, 0, 0
 	song mus_poke_radar, 0, 0
 	song mus_rival_log, 0, 0
+	song mus_rg_champ_r_2, 0, 0
+	song mus_gs_vs_champ, 0, 0
 	song cancel, 0, 0
 	song cut, 0, 0
 	song logo, 0, 0

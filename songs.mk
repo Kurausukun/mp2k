@@ -689,3 +689,9 @@ $(MID_SUBDIR)/mus_poke_radar.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_rival_log.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G124 -V127
+
+$(MID_SUBDIR)/mus_rg_champ_r_2.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G154 -V090
+
+$(MID_SUBDIR)/mus_gs_vs_champ.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G228 -V127
