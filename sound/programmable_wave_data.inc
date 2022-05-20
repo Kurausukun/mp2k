@@ -91,3 +91,32 @@ ProgrammableWaveData_081023F4::
 
 ProgrammableWaveData_08102404::
 	.incbin "sound/programmable_wave_samples/08102404.pcm"
+
+@ Multiboot waves start here
+
+ProgrammableWaveData_0202E66C::
+	.incbin "sound/programmable_wave_samples/0202E66C.pcm"
+
+ProgrammableWaveData_0202E67C::
+	.incbin "sound/programmable_wave_samples/0202E67C.pcm"
+
+ProgrammableWaveData_0202E6AC::
+	.incbin "sound/programmable_wave_samples/0202E6AC.pcm"
+
+ProgrammableWaveData_0202E6CC::
+	.incbin "sound/programmable_wave_samples/0202E6CC.pcm"
+
+ProgrammableWaveData_0202E6DC::
+	.incbin "sound/programmable_wave_samples/0202E6DC.pcm"
+
+ProgrammableWaveData_0202E6EC::
+	.incbin "sound/programmable_wave_samples/0202E6EC.pcm"
+
+ProgrammableWaveData_0202E6FC::
+	.incbin "sound/programmable_wave_samples/0202E6FC.pcm"
+
+ProgrammableWaveData_0202E70C::
+	.incbin "sound/programmable_wave_samples/0202E70C.pcm"
+
+ProgrammableWaveData_0202E71C::
+	.incbin "sound/programmable_wave_samples/0202E71C.pcm"

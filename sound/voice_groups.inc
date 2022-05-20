@@ -5167,3 +5167,134 @@ gUnknown_08101A64::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_keysplit_all gUnknown_081013C8
+
+	.align 2
+gUnknown_0202E05C::	@ 0x0202E05C
+	voice_directsound 60, 0, DirectSoundWaveData_0202E9C8, 255, 0, 255, 0	@0202E05C
+	voice_directsound 60, 0, DirectSoundWaveData_0202F2F0, 255, 0, 255, 0	@0202E068
+	voice_directsound 60, 0, DirectSoundWaveData_0202F7A8, 255, 0, 255, 0	@0202E074
+	voice_noise 60, 0, 0, 0, 0, 15, 3	@0202E080
+	voice_noise 60, 0, 1, 0, 0, 15, 1	@0202E08C
+	voice_directsound 60, 0, DirectSoundWaveData_020300DC, 255, 0, 255, 0	@0202E098
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E0A4
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E0B0
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E0BC
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E0C8
+	voice_square_1 60, 0, 0, 2, 0, 4, 0, 0	@0202E0D4
+	voice_square_1 60, 0, 0, 2, 0, 2, 4, 0	@0202E0E0
+	voice_square_2 60, 0, 2, 0, 2, 4, 0	@0202E0EC
+	voice_square_2 60, 0, 2, 0, 4, 0, 0	@0202E0F8
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E104
+	voice_square_2 60, 0, 2, 0, 0, 15, 0	@0202E110
+	voice_programmable_wave 60, 0, ProgrammableWaveData_0202E6CC, 0, 0, 15, 0	@0202E11C
+	voice_square_1 60, 0, 0, 0, 0, 1, 11, 0	@0202E128
+	voice_square_1 60, 0, 0, 1, 0, 2, 0, 0	@0202E134
+	voice_programmable_wave 60, 0, ProgrammableWaveData_0202E6EC, 0, 4, 7, 0	@0202E140
+	voice_square_1 60, 0, 23, 1, 0, 0, 7, 0	@0202E14C
+	voice_noise 60, 0, 0, 0, 6, 1, 1	@0202E158
+	voice_square_1 60, 0, 31, 0, 0, 1, 0, 0	@0202E164
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E170
+	voice_noise 60, 0, 0, 0, 0, 15, 0	@0202E17C
+	voice_square_1 60, 0, 0, 2, 0, 1, 0, 0	@0202E188
+	voice_programmable_wave 60, 0, ProgrammableWaveData_0202E6FC, 0, 0, 15, 0	@0202E194
+	voice_noise 60, 0, 1, 1, 0, 15, 0	@0202E1A0
+	voice_square_1 60, 0, 0, 1, 0, 4, 0, 0	@0202E1AC
+	voice_square_2 60, 0, 2, 0, 1, 0, 0	@0202E1B8
+	voice_square_2 60, 0, 2, 0, 4, 0, 0	@0202E1C4
+	voice_square_2 60, 0, 1, 0, 2, 0, 0	@0202E1D0
+	voice_square_2 60, 0, 1, 0, 3, 0, 0	@0202E1DC
+	voice_square_2 60, 0, 1, 0, 4, 0, 0	@0202E1E8
+	voice_square_1 60, 0, 0, 2, 0, 3, 0, 0	@0202E1F4
+	voice_programmable_wave 60, 0, ProgrammableWaveData_0202E70C, 0, 0, 15, 0	@0202E200
+	voice_noise 60, 0, 0, 1, 2, 9, 3	@0202E20C
+	voice_square_1 60, 0, 0, 2, 0, 6, 1, 0	@0202E218
+	voice_programmable_wave 60, 0, ProgrammableWaveData_0202E71C, 0, 1, 7, 0	@0202E224
+	voice_noise 60, 0, 0, 0, 2, 0, 0	@0202E230
+	voice_noise 60, 0, 0, 0, 1, 0, 0	@0202E23C
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E248
+	voice_programmable_wave 60, 0, ProgrammableWaveData_0202E70C, 0, 0, 15, 0	@0202E254
+	voice_square_1 60, 0, 0, 1, 0, 1, 0, 0	@0202E260
+	voice_noise 60, 0, 0, 0, 6, 0, 0	@0202E26C
+	voice_square_1 60, 0, 0, 0, 0, 1, 11, 0	@0202E278
+	voice_square_1 60, 0, 0, 0, 0, 3, 0, 0	@0202E284
+	voice_square_2 60, 0, 0, 0, 0, 15, 1	@0202E290
+	voice_programmable_wave 60, 0, ProgrammableWaveData_0202E70C, 0, 0, 15, 0	@0202E29C
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E2A8
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E2B4
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E2C0
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E2CC
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E2D8
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E2E4
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E2F0
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E2FC
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E308
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E314
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E320
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E32C
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E338
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E344
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E350
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E35C
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E368
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E374
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E380
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E38C
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E398
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E3A4
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E3B0
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E3BC
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E3C8
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E3D4
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E3E0
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E3EC
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E3F8
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E404
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E410
+	voice_directsound 60, 0, DirectSoundWaveData_02030CB0, 255, 0, 255, 0	@0202E41C
+	voice_directsound 60, 0, DirectSoundWaveData_02031308, 255, 249, 25, 0	@0202E428
+	voice_directsound 60, 0, DirectSoundWaveData_02031A88, 255, 0, 255, 0	@0202E434
+	voice_directsound 60, 0, DirectSoundWaveData_02032984, 255, 0, 255, 0	@0202E440
+	voice_directsound 60, 0, DirectSoundWaveData_02031308, 255, 216, 0, 127	@0202E44C
+	voice_directsound 60, 0, DirectSoundWaveData_02030CB0, 255, 0, 255, 149	@0202E458
+	voice_directsound 60, 0, DirectSoundWaveData_02031A88, 255, 0, 255, 127	@0202E464
+	voice_directsound 60, 0, DirectSoundWaveData_02032984, 255, 0, 255, 127	@0202E470
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E47C
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E488
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E494
+	voice_square_1 60, 0, 0, 2, 0, 2, 3, 1	@0202E4A0
+	voice_square_2 60, 0, 2, 0, 2, 3, 1	@0202E4AC
+	voice_programmable_wave 60, 0, ProgrammableWaveData_0202E66C, 0, 2, 3, 0	@0202E4B8
+	voice_programmable_wave 60, 0, ProgrammableWaveData_0202E67C, 0, 2, 0, 0	@0202E4C4
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E4D0
+	voice_directsound 60, 0, DirectSoundWaveData_02033170, 255, 0, 255, 0	@0202E4DC
+	voice_directsound 60, 0, DirectSoundWaveData_020334A0, 255, 0, 255, 0	@0202E4E8
+	voice_noise 80, 0, 0, 0, 0, 7, 0	@0202E4F4
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E500
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E50C
+	voice_square_1 60, 0, 0, 0, 0, 0, 15, 1	@0202E518
+	voice_square_2 60, 0, 0, 0, 0, 15, 1	@0202E524
+	voice_programmable_wave 60, 0, ProgrammableWaveData_0202E6AC, 0, 4, 1, 1	@0202E530
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E53C
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E548
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E554
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E560
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E56C
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E578
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E584
+	voice_square_1 60, 0, 0, 1, 0, 0, 15, 1	@0202E590
+	voice_square_2 60, 0, 1, 0, 0, 15, 1	@0202E59C
+	voice_programmable_wave 60, 0, ProgrammableWaveData_0202E6DC, 0, 2, 0, 0	@0202E5A8
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E5B4
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E5C0
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E5CC
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E5D8
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E5E4
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E5F0
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0	@0202E5FC
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 1	@0202E608
+	voice_square_2 60, 0, 2, 0, 0, 15, 1	@0202E614
+	voice_programmable_wave 60, 0, ProgrammableWaveData_0202E6AC, 0, 0, 15, 1	@0202E620
+	voice_noise 60, 0, 0, 0, 0, 15, 0	@0202E62C
+	voice_directsound 60, 0, DirectSoundWaveData_02033170, 255, 0, 255, 0	@0202E638
+	voice_directsound 60, 0, DirectSoundWaveData_020334A0, 255, 0, 255, 0	@0202E644
+	voice_keysplit_all gUnknown_0202E05C	@0202E650

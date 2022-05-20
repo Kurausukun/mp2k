@@ -741,3 +741,45 @@ DirectSoundWaveData_087A5430::
 	.align 2
 DirectSoundWaveData_087A8E5C::
 	.incbin "sound/direct_sound_samples/087A8E5C.bin"
+
+@ Multiboot samples start here
+
+	.align 2
+DirectSoundWaveData_0202E9C8:
+	.incbin "sound/direct_sound_samples/0202E9C8.bin"
+
+	.align 2
+DirectSoundWaveData_0202F2F0:
+	.incbin "sound/direct_sound_samples/0202F2F0.bin"
+
+	.align 2
+DirectSoundWaveData_0202F7A8:
+	.incbin "sound/direct_sound_samples/0202F7A8.bin"
+
+	.align 2
+DirectSoundWaveData_020300DC:
+	.incbin "sound/direct_sound_samples/020300DC.bin"
+
+	.align 2
+DirectSoundWaveData_02030CB0:
+	.incbin "sound/direct_sound_samples/02030CB0.bin"
+
+	.align 2
+DirectSoundWaveData_02031308:
+	.incbin "sound/direct_sound_samples/02031308.bin"
+
+	.align 2
+DirectSoundWaveData_02031A88:
+	.incbin "sound/direct_sound_samples/02031A88.bin"
+
+	.align 2
+DirectSoundWaveData_02032984:
+	.incbin "sound/direct_sound_samples/02032984.bin"
+
+	.align 2
+DirectSoundWaveData_02033170:
+	.incbin "sound/direct_sound_samples/02033170.bin"
+
+	.align 2
+DirectSoundWaveData_020334A0:
+	.incbin "sound/direct_sound_samples/020334A0.bin"

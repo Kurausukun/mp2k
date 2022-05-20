@@ -166,3 +166,36 @@ $(MID_SUBDIR)/song0061.s: %.s: %.mid
 
 $(MID_SUBDIR)/song0062.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -GgUnknown_080FF5C8 -V127
+
+$(MID_SUBDIR)/song0100.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(NO_REVERB) -GgUnknown_0202E05C -V127
+
+$(MID_SUBDIR)/song0101.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(NO_REVERB) -GgUnknown_0202E05C -V127
+
+$(MID_SUBDIR)/song0102.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(NO_REVERB) -GgUnknown_0202E05C -V127
+
+$(MID_SUBDIR)/song0103.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(NO_REVERB) -GgUnknown_0202E05C -V127
+
+$(MID_SUBDIR)/song0104.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(NO_REVERB) -GgUnknown_0202E05C -V127
+
+$(MID_SUBDIR)/song0105.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(NO_REVERB) -GgUnknown_0202E05C -V127
+
+$(MID_SUBDIR)/song0106.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(NO_REVERB) -GgUnknown_0202E05C -V127
+
+$(MID_SUBDIR)/song0107.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(NO_REVERB) -GgUnknown_0202E05C -V127
+
+$(MID_SUBDIR)/song0108.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(NO_REVERB) -GgUnknown_0202E05C -V127
+
+$(MID_SUBDIR)/song0109.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -GgUnknown_0202E05C -V127
+
+$(MID_SUBDIR)/song0110.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(NO_REVERB) -GgUnknown_0202E05C -V127
