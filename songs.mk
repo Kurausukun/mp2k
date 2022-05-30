@@ -695,3 +695,9 @@ $(MID_SUBDIR)/mus_rg_champ_r_2.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_gs_vs_champ.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G228 -V127
+
+$(MID_SUBDIR)/mus_rg_sevii_route_2.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G187 -V080
+
+$(MID_SUBDIR)/mus_madmew.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G231 -V127
