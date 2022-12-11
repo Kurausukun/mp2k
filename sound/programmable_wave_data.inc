@@ -73,27 +73,3 @@ ProgrammableWaveData_86B49A0:: @ 86B49A0
 
 ProgrammableWaveData_86B49B0:: @ 86B49B0
 	.incbin "sound/programmable_wave_samples/86B49B0.pcm"
-
-ProgrammableWaveData_organwave::
-	.incbin "sound/programmable_wave_samples/organwave.pcm"
-
-ProgrammableWaveData_triangle::
-	.incbin "sound/programmable_wave_samples/triangle.pcm"
-
-ProgrammableWaveData_sine::
-	.incbin "sound/programmable_wave_samples/sine.pcm"
-
-ProgrammableWaveData_square12::
-	.incbin "sound/programmable_wave_samples/square12.pcm"
-
-ProgrammableWaveData_square25::
-	.incbin "sound/programmable_wave_samples/square25.pcm"
-
-ProgrammableWaveData_square37::
-	.incbin "sound/programmable_wave_samples/square37.pcm"
-
-ProgrammableWaveData_square50::
-	.incbin "sound/programmable_wave_samples/square50.pcm"
-
-ProgrammableWaveData_crystal1::
-	.incbin "sound/programmable_wave_samples/crystal1.pcm"

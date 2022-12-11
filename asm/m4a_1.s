@@ -1261,7 +1261,7 @@ _08000DE8:
 	.bss
 	.global gMPlayTrack000
 gMPlayTrack000:
-	.space 0x50*16
+	.space 0x50*10
 	.size gMPlayTrack000, .-gMPlayTrack000
 
 	.global gMPlayTrack001
