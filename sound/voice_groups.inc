@@ -1,6 +1,6 @@
 	.align 2
 voicegroup000::	@ 0x08119C54
-	voice_keysplit voicegroup002, KeySplitTable1	@08119C54
+	voice_keysplit voicegroup002, KeySplitTable30	@08119C54
 	voice_directsound 60, 0, DirectSoundWaveData_1F92600, 255, 0, 255, 0	@08119C60
 	voice_directsound 60, 0, DirectSoundWaveData_013C744, 255, 0, 255, 0	@08119C6C
 	voice_directsound 60, 0, DirectSoundWaveData_0147114, 255, 0, 255, 0	@08119C78

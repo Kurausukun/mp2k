@@ -97,102 +97,102 @@
 	.byte	9
 
 .set KeySplitTable1, .	@ 0x08120404
-	.byte	9
-	.byte	9
-	.byte	9
-	.byte	9
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	10
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	21
-	.byte	23
-	.byte	23
-	.byte	23
-	.byte	23
-	.byte	23
-	.byte	23
-	.byte	23
-	.byte	23
-	.byte	23
-	.byte	23
-	.byte	23
-	.byte	23
-	.byte	23
-	.byte	23
-	.byte	25
-	.byte	25
-	.byte	25
-	.byte	25
-	.byte	25
-	.byte	25
-	.byte	25
-	.byte	25
-	.byte	25
-	.byte	25
-	.byte	25
-	.byte	25
-	.byte	25
-	.byte	25
-	.byte	25
-	.byte	27
-	.byte	27
-	.byte	27
-	.byte	27
-	.byte	27
-	.byte	27
-	.byte	27
-	.byte	27
-	.byte	27
-	.byte	27
-	.byte	27
-	.byte	27
-	.byte	27
-	.byte	29
-	.byte	29
-	.byte	29
-	.byte	29
-	.byte	29
-	.byte	29
-	.byte	29
-	.byte	29
-	.byte	29
-	.byte	29
-	.byte	29
-	.byte	29
+	.byte	9    // 0
+	.byte	9    // 1
+	.byte	9    // 2
+	.byte	9    // 3
+	.byte	10   // 4
+	.byte	10   // 5
+	.byte	10   // 6
+	.byte	10   // 7
+	.byte	10   // 8
+	.byte	10   // 9
+	.byte	10   // 10
+	.byte	10   // 11
+	.byte	10   // 12
+	.byte	10   // 13
+	.byte	10   // 14
+	.byte	10   // 15
+	.byte	10   // 16
+	.byte	10   // 17
+	.byte	10   // 18
+	.byte	10   // 19
+	.byte	10   // 20
+	.byte	10   // 21
+	.byte	10   // 22
+	.byte	10   // 23
+	.byte	21   // 24
+	.byte	21   // 25
+	.byte	21   // 26
+	.byte	21   // 27
+	.byte	21   // 28
+	.byte	21   // 29
+	.byte	21   // 30
+	.byte	21   // 31
+	.byte	21   // 32
+	.byte	21   // 33
+	.byte	21   // 34
+	.byte	21   // 35
+	.byte	21   // 36
+	.byte	21   // 37
+	.byte	21   // 38
+	.byte	21   // 39
+	.byte	21   // 40
+	.byte	21   // 41
+	.byte	23   // 42
+	.byte	23   // 43
+	.byte	23   // 44
+	.byte	23   // 45
+	.byte	23   // 46
+	.byte	23   // 47
+	.byte	23   // 48
+	.byte	23   // 49
+	.byte	23   // 50
+	.byte	23   // 51
+	.byte	23   // 52
+	.byte	23   // 53
+	.byte	23   // 54
+	.byte	23   // 55
+	.byte	25   // 56
+	.byte	25   // 57
+	.byte	25   // 58
+	.byte	25   // 59
+	.byte	25   // 60
+	.byte	25   // 61
+	.byte	25   // 62
+	.byte	25   // 63
+	.byte	25   // 64
+	.byte	25   // 65
+	.byte	25   // 66
+	.byte	25   // 67
+	.byte	25   // 68
+	.byte	25   // 69
+	.byte	25   // 70
+	.byte	27   // 71
+	.byte	27   // 72
+	.byte	27   // 73
+	.byte	27   // 74
+	.byte	27   // 75
+	.byte	27   // 76
+	.byte	27   // 77
+	.byte	27   // 78
+	.byte	27   // 79
+	.byte	27   // 80
+	.byte	27   // 81
+	.byte	27   // 82
+	.byte	27   // 83
+	.byte	29   // 84
+	.byte	29   // 85
+	.byte	29   // 86
+	.byte	29   // 87
+	.byte	29   // 88
+	.byte	29   // 89
+	.byte	29   // 90
+	.byte	29   // 91
+	.byte	29   // 92
+	.byte	29   // 93
+	.byte	29   // 94
+	.byte	29   // 95
 
 .set KeySplitTable2, .	@ 0x08120464
 	.byte	29
@@ -2625,3 +2625,101 @@
 	.byte	77
 	.byte	77
 	.byte	77
+
+.set KeySplitTable30, . - 24
+	.byte	20   // 24
+	.byte	20   // 25
+	.byte	20   // 26
+	.byte	20   // 27
+	.byte	20   // 28
+	.byte	20   // 29
+	.byte	20   // 30
+	.byte	20   // 31
+	.byte	21   // 32
+	.byte	21   // 33
+	.byte	21   // 34
+	.byte	21   // 35
+	.byte	21   // 36
+	.byte	21   // 37
+	.byte	21   // 38
+	.byte	21   // 39
+	.byte	21   // 40
+	.byte	21   // 41
+	.byte	22   // 42
+	.byte	22   // 43
+	.byte	22   // 44
+	.byte	22   // 45
+	.byte	22   // 46
+	.byte	22   // 47
+	.byte	22   // 48
+	.byte	23   // 49
+	.byte	23   // 50
+	.byte	23   // 51
+	.byte	23   // 52
+	.byte	23   // 53
+	.byte	23   // 54
+	.byte	23   // 55
+	.byte	24   // 56
+	.byte	24   // 57
+	.byte	24   // 58
+	.byte	24   // 59
+	.byte	24   // 60
+	.byte	24   // 61
+	.byte	24   // 62
+	.byte	25   // 63
+	.byte	25   // 64
+	.byte	25   // 65
+	.byte	25   // 66
+	.byte	25   // 67
+	.byte	25   // 68
+	.byte	25   // 69
+	.byte	25   // 70
+	.byte	26   // 71
+	.byte	26   // 72
+	.byte	26   // 73
+	.byte	26   // 74
+	.byte	26   // 75
+	.byte	26   // 76
+	.byte	26   // 77
+	.byte	27   // 78
+	.byte	27   // 79
+	.byte	27   // 80
+	.byte	27   // 81
+	.byte	27   // 82
+	.byte	27   // 83
+	.byte	28   // 84
+	.byte	28   // 85
+	.byte	28   // 86
+	.byte	28   // 87
+	.byte	29   // 88
+	.byte	29   // 89
+	.byte	29   // 90
+	.byte	29   // 91
+	.byte	29   // 92
+	.byte	29   // 93
+	.byte	29   // 94
+	.byte	29   // 95
+	.byte	29   // 96
+	.byte	29   // 97
+	.byte	29   // 98
+	.byte	29   // 99
+	.byte	29   // 100
+	.byte	29   // 101
+	.byte	29   // 102
+	.byte	30   // 103
+	.byte	30   // 104
+	.byte	30   // 105
+	.byte	30   // 106
+	.byte	30   // 107
+	.byte	30   // 108
+	.byte	30   // 109
+	.byte	30   // 110
+	.byte	30   // 111
+	.byte	30   // 112
+	.byte	30   // 113
+	.byte	30   // 114
+	.byte	30   // 115
+	.byte	30   // 116
+	.byte	30   // 117
+	.byte	30   // 118
+	.byte	30   // 119
