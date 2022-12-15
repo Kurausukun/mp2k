@@ -1968,6 +1968,8 @@ gSongTable::	@ 0x08120E94
 	song mus_song1965, 1, 1
 	song mus_song1966, 1, 1
 	song mus_song1967, 1, 1
+	song mus_song1968, 6, 6
+	song mus_song1969, 1, 1
 
 	.align 2
 dummy_song_header::

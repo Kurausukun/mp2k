@@ -115,6 +115,7 @@ clean: mostlyclean clean-tools
 mostlyclean:
 	rm -f $(ROM) $(ELF) $(MAP) $(OBJS)
 	rm -f sound/direct_sound_samples/*.bin
+	rm -f sound/songs/midi/*.s
 	
 clean-tools:
 	@$(foreach tooldir,$(TOOLDIRS),$(MAKE) clean -C $(tooldir);)
