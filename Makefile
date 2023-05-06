@@ -16,7 +16,7 @@ else
 EXE :=
 endif
 
-PREFIX := /opt/cross/bin/
+PREFIX := ${DEVKITARM}/bin/
 
 AS := $(PREFIX)arm-none-eabi-as
 LD := $(PREFIX)arm-none-eabi-ld
