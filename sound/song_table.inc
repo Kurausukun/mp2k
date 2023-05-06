@@ -213,7 +213,7 @@ gSongTable::
 	song mus_weather_kyogre, 0, 0
 	song mus_hinsi, 0, 0
 	song gymleader, 0, 0
-	song trainer_test, 0, 0
+	song mus_trainer_bw, 0, 0
 	song mus_rg_load01_new, 0, 0
 	song mus_heartache_cut, 0, 0
 	song mus_darkcave, 0, 0
@@ -233,6 +233,7 @@ gSongTable::
 	song mus_gs_vs_champ, 0, 0
 	song mus_rg_sevii_route_2, 0, 0
 	song mus_madmew, 0, 0
+	song mus_castle, 0, 0
 	song cancel, 0, 0
 	song cut, 0, 0
 	song logo, 0, 0

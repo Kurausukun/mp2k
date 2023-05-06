@@ -642,7 +642,7 @@ $(MID_SUBDIR)/mus_hinsi.s: %.s: %.mid
 $(MID_SUBDIR)/gymleader.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G214 -V100
 
-$(MID_SUBDIR)/trainer_test.s: %.s: %.mid
+$(MID_SUBDIR)/mus_trainer_bw.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G202 -V090
 
 $(MID_SUBDIR)/mus_rg_load01_new.s: %.s: %.mid
@@ -701,3 +701,6 @@ $(MID_SUBDIR)/mus_rg_sevii_route_2.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_madmew.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G231 -V127
+
+$(MID_SUBDIR)/mus_castle.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G232 -V090
