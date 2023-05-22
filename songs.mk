@@ -704,3 +704,6 @@ $(MID_SUBDIR)/mus_madmew.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_castle.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G232 -V090
+
+$(MID_SUBDIR)/mus_lastgera.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G233 -V127

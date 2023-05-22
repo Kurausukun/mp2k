@@ -234,6 +234,7 @@ gSongTable::
 	song mus_rg_sevii_route_2, 0, 0
 	song mus_madmew, 0, 0
 	song mus_castle, 0, 0
+	song mus_lastgera, 0, 0
 	song cancel, 0, 0
 	song cut, 0, 0
 	song logo, 0, 0
