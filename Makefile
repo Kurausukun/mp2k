@@ -144,7 +144,7 @@ $(OBJ_DIR)/sym_iwram.ld: sym_iwram.txt
 
 $(ELF): %.elf: $(OBJS) $(OBJ_DIR)/ld_script.ld $(OBJ_DIR)/sym_iwram.ld
 	cd $(OBJ_DIR) && $(LD) -T ld_script.ld -Map ../../$(MAP) -o ../../$@ $(OBJS_REL) $(LIB)
-	$(GBAFIX) -cAAAA -m01 --silent $@
+	$(GBAFIX) -cAAAE -m01 --silent $@
 
 ifeq ($(NODEP),1)
 $(ASM_BUILDDIR)/%.o: asm_dep :=
