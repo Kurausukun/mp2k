@@ -1,695 +1,503 @@
 	.align 2
-DirectSoundWaveData_sc88pro_glockenspiel::
-	.incbin "sound/direct_sound_samples/sc88pro_glockenspiel.bin"
+DirectSoundWaveData_0860C67C::
+	.incbin "sound/direct_sound_samples/0860C67C.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_organ2::
-	.incbin "sound/direct_sound_samples/sc88pro_organ2.bin"
+DirectSoundWaveData_0860D2E4::
+	.incbin "sound/direct_sound_samples/0860D2E4.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_fretless_bass::
-	.incbin "sound/direct_sound_samples/sc88pro_fretless_bass.bin"
+DirectSoundWaveData_0860DD58::
+	.incbin "sound/direct_sound_samples/0860DD58.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_slap_bass::
-	.incbin "sound/direct_sound_samples/sc88pro_slap_bass.bin"
+DirectSoundWaveData_0860EEF4::
+	.incbin "sound/direct_sound_samples/0860EEF4.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_synth_bass::
-	.incbin "sound/direct_sound_samples/sc88pro_synth_bass.bin"
+DirectSoundWaveData_08610258::
+	.incbin "sound/direct_sound_samples/08610258.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_timpani::
-	.incbin "sound/direct_sound_samples/sc88pro_timpani.bin"
+DirectSoundWaveData_08613928::
+	.incbin "sound/direct_sound_samples/08613928.bin"
 
 	.align 2
-DirectSoundWaveData_classical_choir_voice_ahhs::
-	.incbin "sound/direct_sound_samples/classical_choir_voice_ahhs.bin"
+DirectSoundWaveData_08617FBC::
+	.incbin "sound/direct_sound_samples/08617FBC.bin"
 
 	.align 2
-DirectSoundWaveData_sd90_classical_oboe::
-	.incbin "sound/direct_sound_samples/sd90_classical_oboe.bin"
+DirectSoundWaveData_0861A680::
+	.incbin "sound/direct_sound_samples/0861A680.bin"
 
 	.align 2
-DirectSoundWaveData_unused_sd90_oboe::
-	.incbin "sound/direct_sound_samples/unused_sd90_oboe.bin"
+DirectSoundWaveData_0861D030::
+	.incbin "sound/direct_sound_samples/0861D030.bin"
 
 	.align 2
-DirectSoundWaveData_unused_guitar_separates_power_chord::
-	.incbin "sound/direct_sound_samples/unused_guitar_separates_power_chord.bin"
+DirectSoundWaveData_0861EB4C::
+	.incbin "sound/direct_sound_samples/0861EB4C.bin"
 
 	.align 2
-DirectSoundWaveData_unused_sc88pro_unison_slap::
-	.incbin "sound/direct_sound_samples/unused_sc88pro_unison_slap.bin"
+DirectSoundWaveData_08621910::
+	.incbin "sound/direct_sound_samples/08621910.bin"
 
 	.align 2
-DirectSoundWaveData_unknown_snare::
-	.incbin "sound/direct_sound_samples/unknown_snare.bin"
+DirectSoundWaveData_08625408::
+	.incbin "sound/direct_sound_samples/08625408.bin"
 
 	.align 2
-DirectSoundWaveData_ethnic_flavours_ohtsuzumi::
-	.incbin "sound/direct_sound_samples/ethnic_flavours_ohtsuzumi.bin"
+DirectSoundWaveData_08626784::
+	.incbin "sound/direct_sound_samples/08626784.bin"
 
 	.align 2
-DirectSoundWaveData_ethnic_flavours_hyoushigi::
-	.incbin "sound/direct_sound_samples/ethnic_flavours_hyoushigi.bin"
+DirectSoundWaveData_08629560::
+	.incbin "sound/direct_sound_samples/08629560.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_rnd_kick::
-	.incbin "sound/direct_sound_samples/sc88pro_rnd_kick.bin"
+DirectSoundWaveData_08629F74::
+	.incbin "sound/direct_sound_samples/08629F74.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_rnd_snare::
-	.incbin "sound/direct_sound_samples/sc88pro_rnd_snare.bin"
+DirectSoundWaveData_0862B1E4::
+	.incbin "sound/direct_sound_samples/0862B1E4.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_tr909_hand_clap::
-	.incbin "sound/direct_sound_samples/sc88pro_tr909_hand_clap.bin"
+DirectSoundWaveData_0862E9A4::
+	.incbin "sound/direct_sound_samples/0862E9A4.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_orchestra_snare::
-	.incbin "sound/direct_sound_samples/sc88pro_orchestra_snare.bin"
+DirectSoundWaveData_086315DC::
+	.incbin "sound/direct_sound_samples/086315DC.bin"
 
 	.align 2
-DirectSoundWaveData_unused_sc55_tom::
-	.incbin "sound/direct_sound_samples/unused_sc55_tom.bin"
+DirectSoundWaveData_086342D8::
+	.incbin "sound/direct_sound_samples/086342D8.bin"
 
 	.align 2
-DirectSoundWaveData_unknown_close_hihat::
-	.incbin "sound/direct_sound_samples/unknown_close_hihat.bin"
+DirectSoundWaveData_08636124::
+	.incbin "sound/direct_sound_samples/08636124.bin"
 
 	.align 2
-DirectSoundWaveData_unknown_open_hihat::
-	.incbin "sound/direct_sound_samples/unknown_open_hihat.bin"
+DirectSoundWaveData_08636D28::
+	.incbin "sound/direct_sound_samples/08636D28.bin"
 
 	.align 2
-DirectSoundWaveData_unknown_bell::
-	.incbin "sound/direct_sound_samples/unknown_bell.bin"
+DirectSoundWaveData_0863B278::
+	.incbin "sound/direct_sound_samples/0863B278.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_tambourine::
-	.incbin "sound/direct_sound_samples/sc88pro_tambourine.bin"
+DirectSoundWaveData_0863F2A0::
+	.incbin "sound/direct_sound_samples/0863F2A0.bin"
 
 	.align 2
-DirectSoundWaveData_trinity_cymbal_crash::
-	.incbin "sound/direct_sound_samples/trinity_cymbal_crash.bin"
+DirectSoundWaveData_086418EC::
+	.incbin "sound/direct_sound_samples/086418EC.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_orchestra_cymbal_crash::
-	.incbin "sound/direct_sound_samples/sc88pro_orchestra_cymbal_crash.bin"
+DirectSoundWaveData_08643094::
+	.incbin "sound/direct_sound_samples/08643094.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_mute_high_conga::
-	.incbin "sound/direct_sound_samples/sc88pro_mute_high_conga.bin"
+DirectSoundWaveData_086458C4::
+	.incbin "sound/direct_sound_samples/086458C4.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_open_low_conga::
-	.incbin "sound/direct_sound_samples/sc88pro_open_low_conga.bin"
+DirectSoundWaveData_08647390::
+	.incbin "sound/direct_sound_samples/08647390.bin"
 
 	.align 2
-DirectSoundWaveData_drum_and_percussion_kick::
-	.incbin "sound/direct_sound_samples/drum_and_percussion_kick.bin"
+DirectSoundWaveData_08648A94::
+	.incbin "sound/direct_sound_samples/08648A94.bin"
 
 	.align 2
-DirectSoundWaveData_sd90_solo_snare::
-	.incbin "sound/direct_sound_samples/sd90_solo_snare.bin"
+DirectSoundWaveData_0864BB10::
+	.incbin "sound/direct_sound_samples/0864BB10.bin"
 
 	.align 2
-DirectSoundWaveData_sd90_ambient_tom::
-	.incbin "sound/direct_sound_samples/sd90_ambient_tom.bin"
+DirectSoundWaveData_0864E450::
+	.incbin "sound/direct_sound_samples/0864E450.bin"
 
 	.align 2
-DirectSoundWaveData_dance_drums_ride_bell::
-	.incbin "sound/direct_sound_samples/dance_drums_ride_bell.bin"
+DirectSoundWaveData_0864E8CC::
+	.incbin "sound/direct_sound_samples/0864E8CC.bin"
 
 	.align 2
-DirectSoundWaveData_sd90_cowbell::
-	.incbin "sound/direct_sound_samples/sd90_cowbell.bin"
+DirectSoundWaveData_08651EB4::
+	.incbin "sound/direct_sound_samples/08651EB4.bin"
 
 	.align 2
-DirectSoundWaveData_unused_heart_of_asia_indian_drum::
-	.incbin "sound/direct_sound_samples/unused_heart_of_asia_indian_drum.bin"
+DirectSoundWaveData_086549E0::
+	.incbin "sound/direct_sound_samples/086549E0.bin"
 
 	.align 2
-DirectSoundWaveData_sd90_open_triangle::
-	.incbin "sound/direct_sound_samples/sd90_open_triangle.bin"
+DirectSoundWaveData_086579A8::
+	.incbin "sound/direct_sound_samples/086579A8.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_jingle_bell::
-	.incbin "sound/direct_sound_samples/sc88pro_jingle_bell.bin"
+DirectSoundWaveData_086593DC::
+	.incbin "sound/direct_sound_samples/086593DC.bin"
 
 	.align 2
-DirectSoundWaveData_ethnic_flavours_atarigane::
-	.incbin "sound/direct_sound_samples/ethnic_flavours_atarigane.bin"
+DirectSoundWaveData_0865A808::
+	.incbin "sound/direct_sound_samples/0865A808.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_taiko::
-	.incbin "sound/direct_sound_samples/sc88pro_taiko.bin"
+DirectSoundWaveData_0865BE5C::
+	.incbin "sound/direct_sound_samples/0865BE5C.bin"
 
 	.align 2
-DirectSoundWaveData_ethnic_flavours_kotsuzumi::
-	.incbin "sound/direct_sound_samples/ethnic_flavours_kotsuzumi.bin"
+DirectSoundWaveData_0865D2E8::
+	.incbin "sound/direct_sound_samples/0865D2E8.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_piano1_48::
-	.incbin "sound/direct_sound_samples/sc88pro_piano1_48.bin"
+DirectSoundWaveData_086600AC::
+	.incbin "sound/direct_sound_samples/086600AC.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_piano1_60::
-	.incbin "sound/direct_sound_samples/sc88pro_piano1_60.bin"
+DirectSoundWaveData_08661004::
+	.incbin "sound/direct_sound_samples/08661004.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_piano1_72::
-	.incbin "sound/direct_sound_samples/sc88pro_piano1_72.bin"
+DirectSoundWaveData_08661A00::
+	.incbin "sound/direct_sound_samples/08661A00.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_piano1_84::
-	.incbin "sound/direct_sound_samples/sc88pro_piano1_84.bin"
+DirectSoundWaveData_08661D9C::
+	.incbin "sound/direct_sound_samples/08661D9C.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_string_ensemble_60::
-	.incbin "sound/direct_sound_samples/sc88pro_string_ensemble_60.bin"
+DirectSoundWaveData_08664F7C::
+	.incbin "sound/direct_sound_samples/08664F7C.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_string_ensemble_72::
-	.incbin "sound/direct_sound_samples/sc88pro_string_ensemble_72.bin"
+DirectSoundWaveData_08666168::
+	.incbin "sound/direct_sound_samples/08666168.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_string_ensemble_84::
-	.incbin "sound/direct_sound_samples/sc88pro_string_ensemble_84.bin"
+DirectSoundWaveData_0866A768::
+	.incbin "sound/direct_sound_samples/0866A768.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_trumpet_60::
-	.incbin "sound/direct_sound_samples/sc88pro_trumpet_60.bin"
+DirectSoundWaveData_0866D67C::
+	.incbin "sound/direct_sound_samples/0866D67C.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_trumpet_72::
-	.incbin "sound/direct_sound_samples/sc88pro_trumpet_72.bin"
+DirectSoundWaveData_0866E660::
+	.incbin "sound/direct_sound_samples/0866E660.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_trumpet_84::
-	.incbin "sound/direct_sound_samples/sc88pro_trumpet_84.bin"
+DirectSoundWaveData_08672450::
+	.incbin "sound/direct_sound_samples/08672450.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_tuba_39::
-	.incbin "sound/direct_sound_samples/sc88pro_tuba_39.bin"
+DirectSoundWaveData_08675214::
+	.incbin "sound/direct_sound_samples/08675214.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_tuba_51::
-	.incbin "sound/direct_sound_samples/sc88pro_tuba_51.bin"
+DirectSoundWaveData_086752B8::
+	.incbin "sound/direct_sound_samples/086752B8.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_tuba_51_short::
-	.incbin "sound/direct_sound_samples/sc88pro_tuba_51_short.bin"
+DirectSoundWaveData_086773C0::
+	.incbin "sound/direct_sound_samples/086773C0.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_french_horn_60::
-	.incbin "sound/direct_sound_samples/sc88pro_french_horn_60.bin"
+DirectSoundWaveData_0867AFA0::
+	.incbin "sound/direct_sound_samples/0867AFA0.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_french_horn_72::
-	.incbin "sound/direct_sound_samples/sc88pro_french_horn_72.bin"
+DirectSoundWaveData_0867C1C0::
+	.incbin "sound/direct_sound_samples/0867C1C0.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_flute::
-	.incbin "sound/direct_sound_samples/sc88pro_flute.bin"
+DirectSoundWaveData_0867D810::
+	.incbin "sound/direct_sound_samples/0867D810.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_fingered_bass::
-	.incbin "sound/direct_sound_samples/sc88pro_fingered_bass.bin"
+DirectSoundWaveData_0867DB94::
+	.incbin "sound/direct_sound_samples/0867DB94.bin"
 
 	.align 2
-DirectSoundWaveData_unknown_koto_high::
-	.incbin "sound/direct_sound_samples/unknown_koto_high.bin"
+DirectSoundWaveData_0868122C::
+	.incbin "sound/direct_sound_samples/0868122C.bin"
 
 	.align 2
-DirectSoundWaveData_sd90_classical_shakuhachi::
-	.incbin "sound/direct_sound_samples/sd90_classical_shakuhachi.bin"
+DirectSoundWaveData_086859F8::
+	.incbin "sound/direct_sound_samples/086859F8.bin"
 
 	.align 2
-DirectSoundWaveData_unknown_koto_low::
-	.incbin "sound/direct_sound_samples/unknown_koto_low.bin"
+DirectSoundWaveData_0868645C::
+	.incbin "sound/direct_sound_samples/0868645C.bin"
 
 	.align 2
-DirectSoundWaveData_sd90_classical_overdrive_guitar::
-	.incbin "sound/direct_sound_samples/sd90_classical_overdrive_guitar.bin"
+DirectSoundWaveData_08686E28::
+	.incbin "sound/direct_sound_samples/08686E28.bin"
 
 	.align 2
-DirectSoundWaveData_sd90_classical_distortion_guitar_high::
-	.incbin "sound/direct_sound_samples/sd90_classical_distortion_guitar_high.bin"
+DirectSoundWaveData_086877D4::
+	.incbin "sound/direct_sound_samples/086877D4.bin"
 
 	.align 2
-DirectSoundWaveData_sd90_classical_distortion_guitar_low::
-	.incbin "sound/direct_sound_samples/sd90_classical_distortion_guitar_low.bin"
+DirectSoundWaveData_08689054::
+	.incbin "sound/direct_sound_samples/08689054.bin"
 
 	.align 2
-DirectSoundWaveData_heart_of_asia_gamelan::
-	.incbin "sound/direct_sound_samples/heart_of_asia_gamelan.bin"
+DirectSoundWaveData_0868C530::
+	.incbin "sound/direct_sound_samples/0868C530.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_church_organ3_low::
-	.incbin "sound/direct_sound_samples/sc88pro_church_organ3_low.bin"
+DirectSoundWaveData_0868CD28::
+	.incbin "sound/direct_sound_samples/0868CD28.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_church_organ3_high::
-	.incbin "sound/direct_sound_samples/sc88pro_church_organ3_high.bin"
+DirectSoundWaveData_0868F7B4::
+	.incbin "sound/direct_sound_samples/0868F7B4.bin"
 
 	.align 2
-DirectSoundWaveData_unknown_female_voice::
-	.incbin "sound/direct_sound_samples/unknown_female_voice.bin"
+DirectSoundWaveData_08690C8C::
+	.incbin "sound/direct_sound_samples/08690C8C.bin"
 
 	.align 2
-DirectSoundWaveData_unused_unknown_male_voice::
-	.incbin "sound/direct_sound_samples/unused_unknown_male_voice.bin"
+DirectSoundWaveData_08691C10::
+	.incbin "sound/direct_sound_samples/08691C10.bin"
 
 	.align 2
-DirectSoundWaveData_sd90_classical_detuned_ep1_low::
-	.incbin "sound/direct_sound_samples/sd90_classical_detuned_ep1_low.bin"
+DirectSoundWaveData_08692044::
+	.incbin "sound/direct_sound_samples/08692044.bin"
 
 	.align 2
-DirectSoundWaveData_sd90_classical_detuned_ep1_high::
-	.incbin "sound/direct_sound_samples/sd90_classical_detuned_ep1_high.bin"
+DirectSoundWaveData_08692530::
+	.incbin "sound/direct_sound_samples/08692530.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_timpani_with_snare::
-	.incbin "sound/direct_sound_samples/sc88pro_timpani_with_snare.bin"
+DirectSoundWaveData_08692C20::
+	.incbin "sound/direct_sound_samples/08692C20.bin"
 
 	.align 2
-DirectSoundWaveData_unknown_synth_snare::
-	.incbin "sound/direct_sound_samples/unknown_synth_snare.bin"
+DirectSoundWaveData_08695A98::
+	.incbin "sound/direct_sound_samples/08695A98.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_square_wave::
-	.incbin "sound/direct_sound_samples/sc88pro_square_wave.bin"
+DirectSoundWaveData_08698908::
+	.incbin "sound/direct_sound_samples/08698908.bin"
 
 	.align 2
-DirectSoundWaveData_bicycle_bell::
-	.incbin "sound/direct_sound_samples/bicycle_bell.bin"
+DirectSoundWaveData_0869B788::
+	.incbin "sound/direct_sound_samples/0869B788.bin"
 
 	.align 2
-DirectSoundWaveData_8725A2C::
-	.incbin "sound/direct_sound_samples/8725A2C.bin"
+DirectSoundWaveData_0869CE68::
+	.incbin "sound/direct_sound_samples/0869CE68.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_pizzicato_strings::
-	.incbin "sound/direct_sound_samples/sc88pro_pizzicato_strings.bin"
+DirectSoundWaveData_0869E02C::
+	.incbin "sound/direct_sound_samples/0869E02C.bin"
 
 	.align 2
-DirectSoundWaveData_872762C::
-	.incbin "sound/direct_sound_samples/872762C.bin"
+DirectSoundWaveData_0869FD84::
+	.incbin "sound/direct_sound_samples/0869FD84.bin"
 
 	.align 2
-DirectSoundWaveData_872921C::
-	.incbin "sound/direct_sound_samples/872921C.bin"
+DirectSoundWaveData_086A1488::
+	.incbin "sound/direct_sound_samples/086A1488.bin"
 
 	.align 2
-DirectSoundWaveData_872A5D0::
-	.incbin "sound/direct_sound_samples/872A5D0.bin"
+DirectSoundWaveData_086A410C::
+	.incbin "sound/direct_sound_samples/086A410C.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_wind::
-	.incbin "sound/direct_sound_samples/sc88pro_wind.bin"
+DirectSoundWaveData_086A6DBC::
+	.incbin "sound/direct_sound_samples/086A6DBC.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_bubbles::
-	.incbin "sound/direct_sound_samples/sc88pro_bubbles.bin"
+DirectSoundWaveData_086A9C84::
+	.incbin "sound/direct_sound_samples/086A9C84.bin"
 
 	.align 2
-DirectSoundWaveData_872EEA8::
-	.incbin "sound/direct_sound_samples/872EEA8.bin"
+DirectSoundWaveData_086AC6B0::
+	.incbin "sound/direct_sound_samples/086AC6B0.bin"
 
 	.align 2
-DirectSoundWaveData_87301B0::
-	.incbin "sound/direct_sound_samples/87301B0.bin"
+DirectSoundWaveData_086AE3EC::
+	.incbin "sound/direct_sound_samples/086AE3EC.bin"
 
 	.align 2
-DirectSoundWaveData_trinity_30303_mega_bass::
-	.incbin "sound/direct_sound_samples/trinity_30303_mega_bass.bin"
+DirectSoundWaveData_086B00DC::
+	.incbin "sound/direct_sound_samples/086B00DC.bin"
 
 	.align 2
-DirectSoundWaveData_8734298::
-	.incbin "sound/direct_sound_samples/8734298.bin"
+DirectSoundWaveData_086B0548::
+	.incbin "sound/direct_sound_samples/086B0548.bin"
 
 	.align 2
-DirectSoundWaveData_87364A8::
-	.incbin "sound/direct_sound_samples/87364A8.bin"
+DirectSoundWaveData_086B2C74::
+	.incbin "sound/direct_sound_samples/086B2C74.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_tubular_bell::
-	.incbin "sound/direct_sound_samples/sc88pro_tubular_bell.bin"
+DirectSoundWaveData_086B6364::
+	.incbin "sound/direct_sound_samples/086B6364.bin"
 
 	.align 2
-DirectSoundWaveData_87385E4::
-	.incbin "sound/direct_sound_samples/87385E4.bin"
+DirectSoundWaveData_086B70BC::
+	.incbin "sound/direct_sound_samples/086B70BC.bin"
 
 	.align 2
-DirectSoundWaveData_trinity_big_boned::
-	.incbin "sound/direct_sound_samples/trinity_big_boned.bin"
+DirectSoundWaveData_086B8430::
+	.incbin "sound/direct_sound_samples/086B8430.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_harp::
-	.incbin "sound/direct_sound_samples/sc88pro_harp.bin"
+DirectSoundWaveData_086B89F0::
+	.incbin "sound/direct_sound_samples/086B89F0.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_xylophone::
-	.incbin "sound/direct_sound_samples/sc88pro_xylophone.bin"
+DirectSoundWaveData_086B928C::
+	.incbin "sound/direct_sound_samples/086B928C.bin"
 
 	.align 2
-DirectSoundWaveData_873ECD8::
-	.incbin "sound/direct_sound_samples/873ECD8.bin"
+DirectSoundWaveData_086BB9F8::
+	.incbin "sound/direct_sound_samples/086BB9F8.bin"
 
 	.align 2
-DirectSoundWaveData_8740818::
-	.incbin "sound/direct_sound_samples/8740818.bin"
+DirectSoundWaveData_086BD24C::
+	.incbin "sound/direct_sound_samples/086BD24C.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_accordion::
-	.incbin "sound/direct_sound_samples/sc88pro_accordion.bin"
+DirectSoundWaveData_086BF6D8::
+	.incbin "sound/direct_sound_samples/086BF6D8.bin"
 
 	.align 2
-DirectSoundWaveData_87424B0::
-	.incbin "sound/direct_sound_samples/87424B0.bin"
+DirectSoundWaveData_086C1108::
+	.incbin "sound/direct_sound_samples/086C1108.bin"
 
 	.align 2
-DirectSoundWaveData_87430C0::
-	.incbin "sound/direct_sound_samples/87430C0.bin"
+DirectSoundWaveData_086C2700::
+	.incbin "sound/direct_sound_samples/086C2700.bin"
 
 	.align 2
-DirectSoundWaveData_8743C50::
-	.incbin "sound/direct_sound_samples/8743C50.bin"
+DirectSoundWaveData_086C4AC0::
+	.incbin "sound/direct_sound_samples/086C4AC0.bin"
 
 	.align 2
-DirectSoundWaveData_87446EC::
-	.incbin "sound/direct_sound_samples/87446EC.bin"
+DirectSoundWaveData_086C5518::
+	.incbin "sound/direct_sound_samples/086C5518.bin"
 
 	.align 2
-DirectSoundWaveData_8745034::
-	.incbin "sound/direct_sound_samples/8745034.bin"
+DirectSoundWaveData_086C86E8::
+	.incbin "sound/direct_sound_samples/086C86E8.bin"
 
 	.align 2
-DirectSoundWaveData_8745A7C::
-	.incbin "sound/direct_sound_samples/8745A7C.bin"
+DirectSoundWaveData_086CA68C::
+	.incbin "sound/direct_sound_samples/086CA68C.bin"
 
 	.align 2
-DirectSoundWaveData_register_noise::
-	.incbin "sound/direct_sound_samples/register_noise.bin"
+DirectSoundWaveData_086CE894::
+	.incbin "sound/direct_sound_samples/086CE894.bin"
 
 	.align 2
-DirectSoundWaveData_88D6978::
-	.incbin "sound/direct_sound_samples/88D6978.bin"
+DirectSoundWaveData_086D03B4::
+	.incbin "sound/direct_sound_samples/086D03B4.bin"
 
 	.align 2
-DirectSoundWaveData_sc88pro_nylon_str_guitar::
-	.incbin "sound/direct_sound_samples/sc88pro_nylon_str_guitar.bin"
+DirectSoundWaveData_086D2484::
+	.incbin "sound/direct_sound_samples/086D2484.bin"
 
 	.align 2
-DirectSoundWaveData_sd90_special_scream_drive::
-	.incbin "sound/direct_sound_samples/sd90_special_scream_drive.bin"
+DirectSoundWaveData_086D3AF4::
+	.incbin "sound/direct_sound_samples/086D3AF4.bin"
 
 	.align 2
-DirectSoundWaveData_88DBBC0::
-	.incbin "sound/direct_sound_samples/88DBBC0.bin"
+DirectSoundWaveData_086D57D4::
+	.incbin "sound/direct_sound_samples/086D57D4.bin"
 
 	.align 2
-DirectSoundWaveData_88DC220::
-	.incbin "sound/direct_sound_samples/88DC220.bin"
+DirectSoundWaveData_086D5E20::
+	.incbin "sound/direct_sound_samples/086D5E20.bin"
 
 	.align 2
-DirectSoundWaveData_88DC704::
-	.incbin "sound/direct_sound_samples/88DC704.bin"
+DirectSoundWaveData_086D8D10::
+	.incbin "sound/direct_sound_samples/086D8D10.bin"
 
 	.align 2
-DirectSoundWaveData_88DD054::
-	.incbin "sound/direct_sound_samples/88DD054.bin"
+DirectSoundWaveData_086DA11C::
+	.incbin "sound/direct_sound_samples/086DA11C.bin"
 
 	.align 2
-DirectSoundWaveData_88DDAC4::
-	.incbin "sound/direct_sound_samples/88DDAC4.bin"
+DirectSoundWaveData_086DD3DC::
+	.incbin "sound/direct_sound_samples/086DD3DC.bin"
 
 	.align 2
-DirectSoundWaveData_88DDDE4::
-	.incbin "sound/direct_sound_samples/88DDDE4.bin"
+DirectSoundWaveData_086DDE8C::
+	.incbin "sound/direct_sound_samples/086DDE8C.bin"
 
 	.align 2
-DirectSoundWaveData_88DEA6C::
-	.incbin "sound/direct_sound_samples/88DEA6C.bin"
+DirectSoundWaveData_086E0074::
+	.incbin "sound/direct_sound_samples/086E0074.bin"
 
 	.align 2
-DirectSoundWaveData_88DF08C::
-	.incbin "sound/direct_sound_samples/88DF08C.bin"
+DirectSoundWaveData_086E2818::
+	.incbin "sound/direct_sound_samples/086E2818.bin"
 
 	.align 2
-DirectSoundWaveData_88DF414::
-	.incbin "sound/direct_sound_samples/88DF414.bin"
+DirectSoundWaveData_086E69F8::
+	.incbin "sound/direct_sound_samples/086E69F8.bin"
 
 	.align 2
-DirectSoundWaveData_88E01F8::
-	.incbin "sound/direct_sound_samples/88E01F8.bin"
+DirectSoundWaveData_086E751C::
+	.incbin "sound/direct_sound_samples/086E751C.bin"
 
 	.align 2
-DirectSoundWaveData_88E0B68::
-	.incbin "sound/direct_sound_samples/88E0B68.bin"
+DirectSoundWaveData_086E838C::
+	.incbin "sound/direct_sound_samples/086E838C.bin"
 
 	.align 2
-DirectSoundWaveData_88E0F04::
-	.incbin "sound/direct_sound_samples/88E0F04.bin"
+DirectSoundWaveData_086E946C::
+	.incbin "sound/direct_sound_samples/086E946C.bin"
 
 	.align 2
-DirectSoundWaveData_88E16B8::
-	.incbin "sound/direct_sound_samples/88E16B8.bin"
+DirectSoundWaveData_086EBAE4::
+	.incbin "sound/direct_sound_samples/086EBAE4.bin"
 
 	.align 2
-DirectSoundWaveData_88E2414::
-	.incbin "sound/direct_sound_samples/88E2414.bin"
+DirectSoundWaveData_086EE278::
+	.incbin "sound/direct_sound_samples/086EE278.bin"
 
 	.align 2
-DirectSoundWaveData_88E2658::
-	.incbin "sound/direct_sound_samples/88E2658.bin"
+DirectSoundWaveData_086EEC88::
+	.incbin "sound/direct_sound_samples/086EEC88.bin"
 
 	.align 2
-DirectSoundWaveData_88E3498::
-	.incbin "sound/direct_sound_samples/88E3498.bin"
+DirectSoundWaveData_086F1714::
+	.incbin "sound/direct_sound_samples/086F1714.bin"
 
 	.align 2
-DirectSoundWaveData_88E3DEC::
-	.incbin "sound/direct_sound_samples/88E3DEC.bin"
+DirectSoundWaveData_086F4AD0::
+	.incbin "sound/direct_sound_samples/086F4AD0.bin"
 
 	.align 2
-DirectSoundWaveData_88E4140::
-	.incbin "sound/direct_sound_samples/88E4140.bin"
+DirectSoundWaveData_086F5248::
+	.incbin "sound/direct_sound_samples/086F5248.bin"
 
 	.align 2
-DirectSoundWaveData_88E4774::
-	.incbin "sound/direct_sound_samples/88E4774.bin"
+DirectSoundWaveData_086F5E50::
+	.incbin "sound/direct_sound_samples/086F5E50.bin"
 
 	.align 2
-DirectSoundWaveData_88E53E0::
-	.incbin "sound/direct_sound_samples/88E53E0.bin"
+DirectSoundWaveData_086F6780::
+	.incbin "sound/direct_sound_samples/086F6780.bin"
 
 	.align 2
-DirectSoundWaveData_88E5978::
-	.incbin "sound/direct_sound_samples/88E5978.bin"
+DirectSoundWaveData_086F8950::
+	.incbin "sound/direct_sound_samples/086F8950.bin"
 
 	.align 2
-DirectSoundWaveData_88E647C::
-	.incbin "sound/direct_sound_samples/88E647C.bin"
+DirectSoundWaveData_086F962C::
+	.incbin "sound/direct_sound_samples/086F962C.bin"
 
 	.align 2
-DirectSoundWaveData_88E6A80::
-	.incbin "sound/direct_sound_samples/88E6A80.bin"
+DirectSoundWaveData_086FEDAC::
+	.incbin "sound/direct_sound_samples/086FEDAC.bin"
 
 	.align 2
-DirectSoundWaveData_88E6C78::
-	.incbin "sound/direct_sound_samples/88E6C78.bin"
-
-	.align 2
-DirectSoundWaveData_88E75DC::
-	.incbin "sound/direct_sound_samples/88E75DC.bin"
-
-	.align 2
-DirectSoundWaveData_88E8568::
-	.incbin "sound/direct_sound_samples/88E8568.bin"
-
-	.align 2
-DirectSoundWaveData_88E8BA0::
-	.incbin "sound/direct_sound_samples/88E8BA0.bin"
-
-	.align 2
-DirectSoundWaveData_88E9674::
-	.incbin "sound/direct_sound_samples/88E9674.bin"
-
-	.align 2
-DirectSoundWaveData_88EA5B8::
-	.incbin "sound/direct_sound_samples/88EA5B8.bin"
-
-	.align 2
-DirectSoundWaveData_88EAB30::
-	.incbin "sound/direct_sound_samples/88EAB30.bin"
-
-	.align 2
-DirectSoundWaveData_88EB97C::
-	.incbin "sound/direct_sound_samples/88EB97C.bin"
-
-	.align 2
-DirectSoundWaveData_88EC884::
-	.incbin "sound/direct_sound_samples/88EC884.bin"
-
-	.align 2
-DirectSoundWaveData_88ED358::
-	.incbin "sound/direct_sound_samples/88ED358.bin"
-
-	.align 2
-DirectSoundWaveData_88EDEEC::
-	.incbin "sound/direct_sound_samples/88EDEEC.bin"
-
-	.align 2
-DirectSoundWaveData_88EE8C4::
-	.incbin "sound/direct_sound_samples/88EE8C4.bin"
-
-	.align 2
-DirectSoundWaveData_88EEF04::
-	.incbin "sound/direct_sound_samples/88EEF04.bin"
-
-	.align 2
-DirectSoundWaveData_88EF9E4::
-	.incbin "sound/direct_sound_samples/88EF9E4.bin"
-
-	.align 2
-DirectSoundWaveData_88F0020::
-	.incbin "sound/direct_sound_samples/88F0020.bin"
-
-	.align 2
-DirectSoundWaveData_88F0738::
-	.incbin "sound/direct_sound_samples/88F0738.bin"
-
-	.align 2
-DirectSoundWaveData_88F1074::
-	.incbin "sound/direct_sound_samples/88F1074.bin"
-
-	.align 2
-DirectSoundWaveData_88F1830::
-	.incbin "sound/direct_sound_samples/88F1830.bin"
-
-	.align 2
-DirectSoundWaveData_88F1D94::
-	.incbin "sound/direct_sound_samples/88F1D94.bin"
-
-	.align 2
-DirectSoundWaveData_88F2B08::
-	.incbin "sound/direct_sound_samples/88F2B08.bin"
-
-	.align 2
-DirectSoundWaveData_88F2F84::
-	.incbin "sound/direct_sound_samples/88F2F84.bin"
-
-	.align 2
-DirectSoundWaveData_88F3470::
-	.incbin "sound/direct_sound_samples/88F3470.bin"
-
-	.align 2
-DirectSoundWaveData_88F3C38::
-	.incbin "sound/direct_sound_samples/88F3C38.bin"
-
-	.align 2
-DirectSoundWaveData_88F4834::
-	.incbin "sound/direct_sound_samples/88F4834.bin"
-
-	.align 2
-DirectSoundWaveData_88F4BAC::
-	.incbin "sound/direct_sound_samples/88F4BAC.bin"
-
-	.align 2
-DirectSoundWaveData_88F5368::
-	.incbin "sound/direct_sound_samples/88F5368.bin"
-
-	.align 2
-DirectSoundWaveData_88F5FCC::
-	.incbin "sound/direct_sound_samples/88F5FCC.bin"
-
-	.align 2
-DirectSoundWaveData_88F6498::
-	.incbin "sound/direct_sound_samples/88F6498.bin"
-
-	.align 2
-DirectSoundWaveData_sc88pro_accordion_duplicate::
-	.incbin "sound/direct_sound_samples/sc88pro_accordion_duplicate.bin"
-
-	.align 2
-DirectSoundWaveData_steinway_b_piano::
-	.incbin "sound/direct_sound_samples/steinway_b_piano.bin"
-
-	.align 2
-DirectSoundWaveData_sd90_classical_whistle::
-	.incbin "sound/direct_sound_samples/sd90_classical_whistle.bin"
-
-	.align 2
-DirectSoundWaveData_sd90_enhanced_delay_shaku::
-	.incbin "sound/direct_sound_samples/sd90_enhanced_delay_shaku.bin"
-
-	.align 2
-DirectSoundWaveData_orchhit::
-	.incbin "sound/direct_sound_samples/orchhit.bin"
-
-	.align 2
-DirectSoundWaveData_organchord::
-	.incbin "sound/direct_sound_samples/organchord.bin"
-
-	.align 2
-DirectSoundWaveData_octavestrings::
-	.incbin "sound/direct_sound_samples/octavestrings.bin"
-
-	.align 2
-DirectSoundWaveData_octavestrings2::
-	.incbin "sound/direct_sound_samples/octavestrings2.bin"
-
-	.align 2
-DirectSoundWaveData_duty::
-	.incbin "sound/direct_sound_samples/synth/duty.bin"
-
-	.align 2
-DirectSoundWaveData_saw::
-	.incbin "sound/direct_sound_samples/synth/saw.bin"
-
-	.align 2
-DirectSoundWaveData_triangle::
-	.incbin "sound/direct_sound_samples/synth/triangle.bin"
-
-    .align 2
-DirectSoundWaveData_sc88pro_vibraphone_36::
-    .incbin "sound/direct_sound_samples/sc88pro_vibraphone_36.bin"
-
-    .align 2
-DirectSoundWaveData_sc88pro_vibraphone_48::
-    .incbin "sound/direct_sound_samples/sc88pro_vibraphone_48.bin"
-
-    .align 2
-DirectSoundWaveData_sc88pro_vibraphone_60::
-    .incbin "sound/direct_sound_samples/sc88pro_vibraphone_60.bin"
-
-    .align 2
-DirectSoundWaveData_sc88pro_vibraphone_84::
-    .incbin "sound/direct_sound_samples/sc88pro_vibraphone_84.bin"
-
-    .align 2
-DirectSoundWaveData_sc88pro_violin::
-    .incbin "sound/direct_sound_samples/sc88pro_violin.bin"
-
-    .align 2
-DirectSoundWaveData_sc88pro_castanets::
-    .incbin "sound/direct_sound_samples/sc88pro_castanets.bin"
-
-    .align 2
-DirectSoundWaveData_sc88pro_high_wood_block::
-    .incbin "sound/direct_sound_samples/sc88pro_high_wood_block.bin"
-
-	.align 2
-DirectSoundWaveData_sine::
-	.incbin "sound/direct_sound_samples/sine.bin"
-
-	.align 2
-DirectSoundWaveData_startup::
-	.incbin "sound/direct_sound_samples/startup.bin"
-
-	.align 2
-DirectSoundWaveData_square25::
-	.incbin "sound/direct_sound_samples/square25.bin"
+DirectSoundWaveData_08704670::
+	.incbin "sound/direct_sound_samples/08704670.bin"

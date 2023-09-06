@@ -6,7 +6,7 @@
 	@ first entry is VGR, second is master volume.. no idea what they do
 	.global	app_song_table
 app_song_table:
-	.rept 228
+	.rept 578
 	.short	 0,  0
 	.endr
 
@@ -15,7 +15,7 @@ app_song_table:
 
 	.global	app_vgrp_table
 app_vgrp_table:
-	.word	voicegroup000
+	.word	gUnknown_0860A418
 
 	.global	pbymidi_swi
 	.equ	pbymidi_swi, 0

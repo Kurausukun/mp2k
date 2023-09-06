@@ -13,6 +13,10 @@ struct MusicPlayerInfo gMPlayInfo000;
 struct MusicPlayerInfo gMPlayInfo001;
 struct MusicPlayerInfo gMPlayInfo002;
 struct MusicPlayerInfo gMPlayInfo003;
+struct MusicPlayerTrack gMPlayTrack000[8];
+struct MusicPlayerTrack gMPlayTrack001[6];
+struct MusicPlayerTrack gMPlayTrack002[6];
+struct MusicPlayerTrack gMPlayTrack003[6];
 u8 gMPlayMemAccArea[0x10];
 
 u32 MidiKeyToFreq(struct WaveData *wav, u8 key, u8 fineAdjust)
@@ -70,9 +74,9 @@ void m4aSoundInit(void)
     SoundInit(&gSoundInfo);
     MPlayExtender(gCgbChans);
     m4aSoundMode(SOUND_MODE_DA_BIT_8
-               | SOUND_MODE_FREQ_42048
-               | (12 << SOUND_MODE_MASVOL_SHIFT)
-               | (5 << SOUND_MODE_MAXCHN_SHIFT));
+               | SOUND_MODE_FREQ_15768
+               | (15 << SOUND_MODE_MASVOL_SHIFT)
+               | (7 << SOUND_MODE_MAXCHN_SHIFT));
     for (i = 0; i < NUM_MUSIC_PLAYERS; ++i)
     {
         struct MusicPlayerInfo *mplayInfo = gMPlayTable[i].info;
@@ -408,7 +412,7 @@ void SoundInit(struct SoundInfo *soundInfo)
 
     soundInfo->MPlayJumpTable = (u32)gMPlayJumpTable;
 
-    SampleFreqSet(SOUND_MODE_FREQ_13379);
+    SampleFreqSet(SOUND_MODE_FREQ_15768);
 
     soundInfo->ident = ID_NUMBER;
 }
