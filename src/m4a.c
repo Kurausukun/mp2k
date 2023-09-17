@@ -74,7 +74,7 @@ void m4aSoundInit(void)
     SoundInit(&gSoundInfo);
     MPlayExtender(gCgbChans);
     m4aSoundMode(SOUND_MODE_DA_BIT_8
-               | SOUND_MODE_FREQ_15768
+               | SOUND_MODE_FREQ_42048
                | (15 << SOUND_MODE_MASVOL_SHIFT)
                | (7 << SOUND_MODE_MAXCHN_SHIFT));
     for (i = 0; i < NUM_MUSIC_PLAYERS; ++i)
@@ -412,7 +412,7 @@ void SoundInit(struct SoundInfo *soundInfo)
 
     soundInfo->MPlayJumpTable = (u32)gMPlayJumpTable;
 
-    SampleFreqSet(SOUND_MODE_FREQ_15768);
+    SampleFreqSet(SOUND_MODE_FREQ_42048);
 
     soundInfo->ident = ID_NUMBER;
 }
