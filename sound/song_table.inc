@@ -211,6 +211,7 @@ gSongTable::
 	song mus_rg_slowmasara, 0, 0    @ Epilogue (FRLG)
 	song mus_rg_tvnoize, 0, 0       @ Teachy TV Menu (FRLG)
 	song mus_weather_kyogre, 0, 0
+	song mus_victory_trainer_frlg, 0, 0
 	song mus_hinsi, 0, 0
 	song gymleader, 0, 0
 	song mus_trainer_bw, 0, 0
