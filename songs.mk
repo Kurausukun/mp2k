@@ -710,3 +710,9 @@ $(MID_SUBDIR)/mus_lastgera.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_victory_trainer_frlg.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G236 -V089
+
+$(MID_SUBDIR)/mus_vs_mew2.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G237 -V090
+
+$(MID_SUBDIR)/mus_r_c_au.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G238 -V127

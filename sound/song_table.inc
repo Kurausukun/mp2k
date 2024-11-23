@@ -236,6 +236,8 @@ gSongTable::
 	song mus_madmew, 0, 0
 	song mus_castle, 0, 0
 	song mus_lastgera, 0, 0
+	song mus_vs_mew2, 0, 0
+	song mus_r_c_au, 0, 0
 	song cancel, 0, 0
 	song cut, 0, 0
 	song logo, 0, 0

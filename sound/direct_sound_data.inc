@@ -675,6 +675,10 @@ DirectSoundWaveData_sc88pro_violin::
     .incbin "sound/direct_sound_samples/sc88pro_violin.bin"
 
     .align 2
+DirectSoundWaveData_sd90_classical_violin::
+    .incbin "sound/direct_sound_samples/sd90_classical_violin.bin"
+
+    .align 2
 DirectSoundWaveData_sc88pro_castanets::
     .incbin "sound/direct_sound_samples/sc88pro_castanets.bin"
 
