@@ -136,6 +136,9 @@ $(MID_SUBDIR)/song0052.s: %.s: %.mid
 $(MID_SUBDIR)/song0053.s: %.s: %.mid
 	$(MID) $< $@ -E -R0 -G000 -V127
 
+$(MID_SUBDIR)/song0060.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G000 -V127
+
 $(MID_SUBDIR)/song0100.s: %.s: %.mid
 	$(MID) $< $@ -E -R0 -G003 -V127
 

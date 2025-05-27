@@ -60,7 +60,7 @@ gSongTable::	@ 0x08B59ED0
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0
-	song dummy_song_header, 0, 0
+	song song0060, 0, 0
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0
