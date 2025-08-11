@@ -16,7 +16,7 @@ else
 EXE :=
 endif
 
-PREFIX := /opt/cross/bin/
+PREFIX := $(DEVKITARM)/bin/
 
 AS := $(PREFIX)arm-none-eabi-as
 LD := $(PREFIX)arm-none-eabi-ld
@@ -144,7 +144,7 @@ $(OBJ_DIR)/sym_iwram.ld: sym_iwram.txt
 
 $(ELF): %.elf: $(OBJS) $(OBJ_DIR)/ld_script.ld $(OBJ_DIR)/sym_iwram.ld
 	cd $(OBJ_DIR) && $(LD) -T ld_script.ld -Map ../../$(MAP) -o ../../$@ $(OBJS_REL) $(LIB)
-	$(GBAFIX) -m01 -cAAAC --silent $@
+	$(GBAFIX) -m01 -cAAAF --silent $@
 
 ifeq ($(NODEP),1)
 $(ASM_BUILDDIR)/%.o: asm_dep :=

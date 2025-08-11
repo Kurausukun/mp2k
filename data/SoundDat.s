@@ -7,6 +7,7 @@
 	.include "sound/music_player_table.inc"
 	.include "sound/song_table.inc"
 	.include "sound/direct_sound_data.inc"
+	.include "sound/song_data.inc"
 	.align 2
 	
 	.global	__total_song_n
