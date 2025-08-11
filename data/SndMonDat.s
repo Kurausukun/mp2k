@@ -15,7 +15,7 @@ app_song_table:
 
 	.global	app_vgrp_table
 app_vgrp_table:
-	.word	gUnknown_080F34A8
+	.word	gUnknown_020100EC
 
 	.global	pbymidi_swi
 	.equ	pbymidi_swi, 0

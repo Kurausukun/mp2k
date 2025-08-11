@@ -9,16 +9,6 @@ ALIGNED(4) struct SoundInfo gSoundInfo;
 
 void *gMPlayJumpTable[36];
 struct CgbChannel gCgbChans[4];
-struct MusicPlayerInfo m4a_mplay000;
-struct MusicPlayerInfo m4a_mplay001;
-struct MusicPlayerInfo m4a_mplay002;
-struct MusicPlayerInfo m4a_mplay003;
-struct MusicPlayerInfo m4a_mplay004;
-struct MusicPlayerTrack m4a_track000;
-struct MusicPlayerTrack m4a_track001;
-struct MusicPlayerTrack m4a_track002;
-struct MusicPlayerTrack m4a_track003;
-struct MusicPlayerTrack m4a_track004;
 
 u8 gMPlayMemAccArea[0x10];
 
