@@ -716,3 +716,6 @@ $(MID_SUBDIR)/mus_vs_mew2.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_r_c_au.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G238 -V127
+
+$(MID_SUBDIR)/test.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G243 -V127

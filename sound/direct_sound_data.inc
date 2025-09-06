@@ -697,3 +697,67 @@ DirectSoundWaveData_startup::
 	.align 2
 DirectSoundWaveData_square25::
 	.incbin "sound/direct_sound_samples/square25.bin"
+
+	.align 2
+DirectSoundWaveData_square_12_c2::
+	.incbin "sound/direct_sound_samples/12_c2.bin"
+
+	.align 2
+DirectSoundWaveData_square_12_c3::
+	.incbin "sound/direct_sound_samples/12_c3.bin"
+
+	.align 2
+DirectSoundWaveData_square_12_c4::
+	.incbin "sound/direct_sound_samples/12_c4.bin"
+
+	.align 2
+DirectSoundWaveData_square_12_c5::
+	.incbin "sound/direct_sound_samples/12_c5.bin"
+
+	.align 2
+DirectSoundWaveData_square_25_c2::
+	.incbin "sound/direct_sound_samples/25_c2.bin"
+
+	.align 2
+DirectSoundWaveData_square_25_c3::
+	.incbin "sound/direct_sound_samples/25_c3.bin"
+
+	.align 2
+DirectSoundWaveData_square_25_c4::
+	.incbin "sound/direct_sound_samples/25_c4.bin"
+
+	.align 2
+DirectSoundWaveData_square_25_c5::
+	.incbin "sound/direct_sound_samples/25_c5.bin"
+
+	.align 2
+DirectSoundWaveData_square_50_c2::
+	.incbin "sound/direct_sound_samples/50_c2.bin"
+
+	.align 2
+DirectSoundWaveData_square_50_c3::
+	.incbin "sound/direct_sound_samples/50_c3.bin"
+
+	.align 2
+DirectSoundWaveData_square_50_c4::
+	.incbin "sound/direct_sound_samples/50_c4.bin"
+
+	.align 2
+DirectSoundWaveData_square_50_c5::
+	.incbin "sound/direct_sound_samples/50_c5.bin"
+
+	.align 2
+DirectSoundWaveData_square_75_c2::
+	.incbin "sound/direct_sound_samples/75_c2.bin"
+
+	.align 2
+DirectSoundWaveData_square_75_c3::
+	.incbin "sound/direct_sound_samples/75_c3.bin"
+
+	.align 2
+DirectSoundWaveData_square_75_c4::
+	.incbin "sound/direct_sound_samples/75_c4.bin"
+
+	.align 2
+DirectSoundWaveData_square_75_c5::
+	.incbin "sound/direct_sound_samples/75_c5.bin"
