@@ -71,7 +71,7 @@ SUBDIRS  := $(sort $(dir $(OBJS)))
 
 $(shell mkdir -p $(SUBDIRS))
 
-NAME := mp2k
+NAME := SoundMon_m3
 ROM := $(NAME).gba
 ELF := $(NAME).elf
 MAP := $(NAME).map

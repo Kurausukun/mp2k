@@ -4868,3 +4868,6 @@ $(MID_SUBDIR)/mus_song1968.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_song1969.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G000 -V127
+
+$(MID_SUBDIR)/mus_song1970.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G000 -V127
