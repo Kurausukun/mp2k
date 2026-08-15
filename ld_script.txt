@@ -37,9 +37,9 @@ SECTIONS {
     {
         seg_rodata_top = .;
         src/*.o(.data);
-        src/*.o(.rodata);
+        src/*.o(.rodata*);
         data/*.o(.data);
-        data/*.o(.rodata);
+        data/*.o(.rodata*);
     } =0
     
     song_data :
